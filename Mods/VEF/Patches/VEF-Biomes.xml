@@ -15,7 +15,6 @@
 				<startingGoodwillByFactionDefs>
 					<HiverSavage>-100~-40</HiverSavage>
 					<HiverFogmen>-100~-100</HiverFogmen>
-					<ShekNeutral>0~40</ShekNeutral>
 				</startingGoodwillByFactionDefs>
 			</li>
 		</value>
@@ -35,7 +34,6 @@
 				<startingGoodwillByFactionDefs>
 					<HiverCivil>-100~-100</HiverCivil>
 					<HiverFogmen>-100~-100</HiverFogmen>
-					<ShekNeutral>-100~-80</ShekNeutral>
 				</startingGoodwillByFactionDefs>
 			</li>
 		</value>
@@ -52,8 +50,7 @@
 				</allowedBiomes>
 				<startingGoodwillByFactionDefs>
 					<HiverCivil>-100~-100</HiverCivil>					
-					<HiverFogmen>-100~-100</HiverFogmen>				
-					<ShekNeutral>-100~-100</ShekNeutral>
+					<HiverFogmen>-100~-100</HiverFogmen>		
 				</startingGoodwillByFactionDefs>
 			</li>
 		</value>

@@ -1,38 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- Supposed to switch Human ancients to Skeletal Faction-->
-<!--	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>False</enabled>
-		<label>Replace Ancients with Skeletons?: (Requires New Game, change when not in use)</label>
-		<mods>
-			<li>[HH] Rim-Kenshi: Addon Pack</li>
-		</mods>
-
-
-		<operations>
-
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/FactionDef[defName="AncientsBase"]/requiredCountAtGameStart</xpath>
-				<value>
-					<requiredCountAtGameStart>0</requiredCountAtGameStart>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/FactionDef[defName="AncientSkeletonBase"]/requiredCountAtGameStart</xpath>
-				<value>
-					<requiredCountAtGameStart>1</requiredCountAtGameStart>
-				</value>
-			</li>
-
-		</operations>
-	</Operation>
--->
 	<!--Removes Fogman Faction-->
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>False</enabled>
-		<label>Fogmen as default starting Enemy?:</label>
+		<label>Fogmen as default starting faction?:</label>
 		<mods>
 			<li>[HH] Rim-Kenshi: Addon Pack</li>
 		</mods>
@@ -49,6 +21,5 @@
 
 		</operations>
 	</Operation>
-
 
 </Patch>
