@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Childhood.................................................................................-->
+
+	<AlienRace.BackstoryDef>
+		<defName>FogStandardHeavy</defName>
+		<title>Fog Member</title>
+		<titleShort>Fogr</titleShort>
+		<baseDescription>{PAWN_nameDef} was born from the chest of its Queen, it grew quickly and began protecting its Fog as a Heavy drone.</baseDescription>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>HiveBackstoriesFogHeavy</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>ManualSkilled</li>
+		</workDisables>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+
+
+	<!--Adulthood.................................................................................-->
+
+
+
+	<AlienRace.BackstoryDef>
+		<defName>FogHeavyBackground1</defName>
+		<title>Fog Heavy Drone</title>
+		<titleShort>Fog Heavy</titleShort>
+		<baseDescription>{PAWN_nameDef} spent most of its adulthood protecting its Fog and fending off various threats. It fought off both savage-Fogrs who sought to destroy it Fog, and the human bandits that came to pillage and plunder.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>HiveBackstoriesFogHeavy</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<li>
+				<defName>Tough</defName>
+				<chance>15</chance>
+			</li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>FogHeavyBackground3</defName>
+		<title>Heavy Huntsman</title>
+		<titleShort>Huntsman</titleShort>
+		<baseDescription>After the worker drones of its Fog could not hunt animals properly without ending up savaged and mauled, {PAWN_nameDef} was commanded to become the Fog's hunter, running down and hunting various game; it put meat on the tables, and food in the bellies of its fellow Fogrs.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>HiveBackstoriesFogHeavy</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>7</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>FogHeavyBackground4</defName>
+		<title>Frontline Drone</title>
+		<titleShort>Army Ant</titleShort>
+		<baseDescription>{PAWN_nameDef} was stationed on the borders of its Fogs territory, fending off the invasion forces of the savage-Fog neighbors. It was nonstop bloodshed on both sides, and the fighting only stopped once the savage-Fogrs lost their foothold and their Fog was eradicated - {PAWN_nameDef} was one of the Fogr Heavys to lead the charge.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>HiveBackstoriesFogHeavy</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>8</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<li>
+				<defName>Bloodlust</defName>
+				<chance>20</chance>
+			</li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>FogHeavyBackground6</defName>
+		<title>Praetorian Guard</title>
+		<titleShort>Royal Guard</titleShort>
+		<baseDescription>Always on the right-side of the Queen, {PAWN_nameDef} stood guard day and night protecting her from any would be threats, alongside other elite Heavy castes and possibly even the mythical praetorian Fogrs.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>HiveBackstoriesFogPraetorian</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<li>
+				<defName>Nerves</defName>
+				<degree>1</degree>
+				<chance>20</chance>
+			</li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>FogHeavyBackground7</defName>
+		<title>Fog Night-watch</title>
+		<titleShort>Night-watch</titleShort>
+		<baseDescription>{PAWN_nameDef} was its Fog's night-watch, peering into the darkness of the night watching for any hostile movement. It repelled many stealth attacks by both humans and savage-Fogrs.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>HiveBackstoriesFogHeavy</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<forcedTraits>
+			<li>
+				<defName>NightOwl</defName>
+				<chance>35</chance>
+			</li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>FogHeavyBackground8</defName>
+		<title>Fog Heavy</title>
+		<titleShort>Fog Heavy</titleShort>
+		<baseDescription>{PAWN_nameDef} was its Fog's heavy drone-guard - it stood watch inside the crafting nests and acted as the bouncer for the Fog vendors, spotting any humans thieves and punishing them accordingly.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>HiveBackstoriesFogHeavy</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>5</amount>
+			</li>
+		</skillGains>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>FogHeavyBackground9</defName>
+		<title>Fog Mortician</title>
+		<titleShort>Mortician</titleShort>
+		<baseDescription>{PAWN_nameDef} acted as the undertaker of its Fog, carrying death and sick Fogrs to be cremated inside the furnaces of its Fog - not wanting to risk diseases from ravaging its Fog. It also became slightly immune to some diseases whilst performing its work.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>HiveBackstoriesFogHeavy</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<forcedTraits>
+			<li>
+				<defName>Immunity</defName>
+				<degree>1</degree>
+				<chance>20</chance>
+			</li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef>
+		<defName>FogHeavyBackground10</defName>
+		<title>Simple Guard</title>
+		<titleShort>Guard</titleShort>
+		<baseDescription>{PAWN_nameDef} never really left the inner boundaries of its Fog, acting as a "town guard" of sorts encase the outer defenses fell. It never really had to fend off any attackers.</baseDescription>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>HiveBackstoriesFogHeavy</li>
+		</spawnCategories>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<li>
+				<defName>Ascetic</defName>
+				<chance>10</chance>
+			</li>
+		</forcedTraits>
+	</AlienRace.BackstoryDef>
+
+</Defs>

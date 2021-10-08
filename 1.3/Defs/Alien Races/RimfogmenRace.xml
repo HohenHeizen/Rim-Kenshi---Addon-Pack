@@ -1,0 +1,1289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--Fogman-->
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Fogman</defName>
+		<label>fogman</label>
+		<description>Fragile and expendable, workers now crazed at the loss of the Queen; they know only servitude to the hive, their Princes. Though having loss ass sense of self they now travel in packs and attempt to swarm their prey.</description>
+		<statBases>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<ComfyTemperatureMin>8</ComfyTemperatureMin>
+		
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+	
+			<LeatherAmount>25</LeatherAmount>
+
+			<MarketValue>200</MarketValue>
+	
+			<MoveSpeed>5.5</MoveSpeed>
+
+			<Flammability>2</Flammability>
+
+			<CarryingCapacity>75</CarryingCapacity>
+	
+			<MentalBreakThreshold>0.5</MentalBreakThreshold>
+	
+			<ResearchSpeed>0.0</ResearchSpeed>
+			
+			<MiningSpeed>1.5</MiningSpeed>
+			<SocialImpact>-1.0</SocialImpact>
+		
+			<ConstructionSpeed>0.8</ConstructionSpeed>
+
+			<EatingSpeed>2</EatingSpeed>
+			<MeleeDPS>.3</MeleeDPS>
+			<IncomingDamageFactor>4</IncomingDamageFactor>
+			<FoodPoisonChance>.01</FoodPoisonChance>
+			<MeleeDodgeChance>0</MeleeDodgeChance>
+
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4.2</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>4</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4.2</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>4</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<alienRace>
+			<generalSettings>
+				<humanRecipeImport>false</humanRecipeImport>
+				<alienPartGenerator>
+					<alienbodytypes>
+						<li>Thin</li>
+					</alienbodytypes>
+					<aliencrowntypes>
+						<li>Average_Normal</li>
+					</aliencrowntypes>
+					<useGenderedHeads>false</useGenderedHeads>
+					<useGenderedBodies>false</useGenderedBodies>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(255, 255, 255, 255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+				<immuneToAge>false</immuneToAge>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Cannibal</defName>
+						<chance>99</chance>
+					</li>
+					<li>
+						<defName>Psychopath</defName>
+						<chance>99</chance>
+					</li>
+					<li>
+						<defName>Asexual</defName>
+						<chance>99</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<allowHumanBios>false</allowHumanBios>
+				<maleGenderProbability>1.0</maleGenderProbability>
+				<chemicalSettings>
+    </chemicalSettings>
+				<disallowedTraits>
+					<li>
+						<defName>BodyPurist</defName>
+					</li>
+					<li>
+						<defName>Gay</defName>
+					</li>
+					<li>
+						<defName>Bisexual</defName>
+					</li>
+				</disallowedTraits>
+				<notXenophobistTowards>
+					<li>FogHeavy</li>
+					<li>FogPrince</li>
+				</notXenophobistTowards>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<body>Hivers/Fogmen/Body/</body>
+					<head>Hivers/Fogmen/Fogman/</head>
+				</li>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<relationSettings>
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierParent>0</relationChanceModifierParent>
+				<relationChanceModifierSibling>0</relationChanceModifierSibling>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			</relationSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>Naked</li>
+					<li>AteLavishMeal</li>
+					<li>AteFineMeal</li>
+					<!--li>AteAwfulMeal</li-->
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteCorpse</li>
+					<li>AteRottenFood</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatDirectCannibal</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>ObservedLayingCorpse</li>
+					<li>ObservedLayingRottingCorpse</li>
+				</cannotReceiveThoughts>
+				<ateThoughtSpecific>
+    </ateThoughtSpecific>
+				<replacerList>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatDirect</original>
+						<replacer>FogAteHiverMeatDirect</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatDirectCannibal</original>
+						<replacer>FogAteHiverMeatDirectCannibal</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatAsIngredient</original>
+						<replacer>FogAteHiverMeatAsIngredient</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatAsIngredientCannibal</original>
+						<replacer>FogAteHiverMeatAsIngredientCannibal</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaDirect</original>
+						<replacer>FogAteHiverLarvaDirect</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaDirectCannibal</original>
+						<replacer>FogAteHiverLarvaDirectCannibal</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaAsIngredient</original>
+						<replacer>FogAteHiverLarvaAsIngredient</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaAsIngredientCannibal</original>
+						<replacer>FogAteHiverLarvaAsIngredientCannibal</replacer>
+					</li>
+				</replacerList>
+			</thoughtSettings>
+			<raceRestriction>
+				<blackApparelList>
+					<li>Apparel_SimpleHelmet</li>
+					<li>Apparel_Tuque</li>
+					<li>Apparel_TribalHeaddress</li>
+					<li>Apparel_AdvancedHelmet</li>
+					<li>Apparel_PowerArmorHelmet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetRecon</li>
+					<li>Apparel_PsychicFoilHelmet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetReconPrestige</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorMarineHelmetPrestige</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPrestige</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusHelmet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_EltexSkullcap</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_HatHood</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Coronet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_CrownStellic</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Slicecap</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Footwear_Boots</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Footwear_Shoes</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Footwear_PlateBoots</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Footwear_MarineBoots</defName>
+					</li>
+					<li MayRequire="miathea.flakarmorexpansion">
+						<defName>Apparel_FlakBoots</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_Hardhat</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_GasMask</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_BaseballCap</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedVikings">
+						<defName>VFEV_Apparel_GuardianHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedVikings">
+						<defName>VFEV_Apparel_LeatherHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedVikings">
+						<defName>VFEV_Apparel_RavagerHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedSettlers">
+						<defName>VFES_Headgear_FlatCap</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedMedieval">
+						<defName>VFEM_Apparel_PlateHelmetHeavy</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Headgear_TrooperHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Headgear_HeavyMarineHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Headgear_Balaclava</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Apparel_PlateHelmet</defName>
+					</li>
+					<li MayRequire="Gunmar.TribalWarriorSet">
+						<defName>Gunmar_Apparel_PeltCap</defName>
+					</li>
+					<li MayRequire="Gunmar.TribalWarriorSet">
+						<defName>Gunmar_Apparel_SunshadePeltCap</defName>
+					</li>
+					<li MayRequire="Gunmar.TribalWarriorSet">
+						<defName>Gunmar_Apparel_WovenCap</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_NinjaMask</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_PaladinsHeavyHelm</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_HeavyPaladinsHelm</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_UnstrainedTinCan</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_CrabRaiderHelmet</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_TinCan</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_HackStopperHat</defName>
+					</li>
+				</blackApparelList>
+			</raceRestriction>
+		</alienRace>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<nameGenerator>NamerPersonRimFogmen</nameGenerator>
+			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>      <trainability>None</trainability>
+			<makesFootprints>false</makesFootprints>
+			<lifeExpectancy>40</lifeExpectancy>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<leatherDef>Leather_Plain</leatherDef>
+			<!--<nameCategory>HumanStandard</nameCategory>-->
+			<body>HiverBody</body>
+			<predator>true</predator>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>1.6</baseHungerRate>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<hasGenders>false</hasGenders>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>HiverBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HiverAdult</def>
+					<minAge>2</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.1,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,2)</li>
+					<li>(1,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>Fogman_HediffGiverSet</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>InstallArchotechLeg</li>
+			<li>InstallBionicLeg</li>
+			<li>InstallSimpleProstheticLeg</li>
+			<li>InstallBionicEar</li>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+		</recipes>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li>HumanMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</AlienRace.ThingDef_AlienRace>
+	<!--FogHeavy-->
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>FogHeavy</defName>
+		<label>fog heavy</label>
+		<description>The grunts and muscle of any hive, Heavy drones are made to protect their hive and enforce the will of their Prince. Compared to other members of the hive they have excellent 360° vision, and have thick plates of chitin on parts of their body although they arne't as quick as the drones they are much more powerful.</description>
+		<statBases>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<ComfyTemperatureMin>8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<LeatherAmount>20</LeatherAmount>
+			<MarketValue>300</MarketValue>
+			<MoveSpeed>4.75</MoveSpeed>
+			<Flammability>2</Flammability>
+			<CarryingCapacity>80</CarryingCapacity>
+			<MentalBreakThreshold>0.5</MentalBreakThreshold>
+			<ResearchSpeed>0.0</ResearchSpeed>
+			<MiningSpeed>.8</MiningSpeed>
+			<SocialImpact>-1.0</SocialImpact>
+			<PlantWorkSpeed>0.5</PlantWorkSpeed>
+			<PlantHarvestYield>0.5</PlantHarvestYield>
+			<ConstructionSpeed>0.8</ConstructionSpeed>
+
+			<EatingSpeed>2</EatingSpeed>
+			<MeleeDPS>.5</MeleeDPS>
+			<IncomingDamageFactor>2</IncomingDamageFactor>
+			<FoodPoisonChance>.01</FoodPoisonChance>
+			<MeleeDodgeChance>0</MeleeDodgeChance>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>6.2</power>
+				<!--8.2-->
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>8</amount>
+							<!--4-->
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>6.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>24</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<alienRace>
+			<generalSettings>
+				<humanRecipeImport>true</humanRecipeImport>
+				<alienPartGenerator>
+					<alienbodytypes>
+						<li>Male</li>
+					</alienbodytypes>
+					<aliencrowntypes>
+						<li>Average_Normal</li>
+						<li>Painted1</li>
+						<li>Painted2</li>
+						<li>Painted3</li>
+						<li>Painted4</li>
+					</aliencrowntypes>
+					<useGenderedHeads>false</useGenderedHeads>
+					<useGenderedBodies>false</useGenderedBodies>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(255, 255, 255, 255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+				<immuneToAge>false</immuneToAge>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Cannibal</defName>
+						<chance>99</chance>
+					</li>
+					<li>
+						<defName>Psychopath</defName>
+						<chance>99</chance>
+					</li>
+					<li>
+						<defName>Asexual</defName>
+						<chance>99</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<allowHumanBios>false</allowHumanBios>
+				<maleGenderProbability>1.0</maleGenderProbability>
+				<chemicalSettings>
+    </chemicalSettings>
+				<disallowedTraits>
+					<li>
+						<defName>BodyPurist</defName>
+					</li>
+					<li>
+						<defName>Wimp</defName>
+					</li>
+					<li>
+						<defName>Gay</defName>
+					</li>
+					<li>
+						<defName>Bisexual</defName>
+					</li>
+				</disallowedTraits>
+				<notXenophobistTowards>
+					<li>FogPrince</li>
+					<li>Fogman</li>
+				</notXenophobistTowards>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<body>Hivers/Fogmen/Body/</body>
+					<head>Hivers/Fogmen/Heavy/</head>
+				</li>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<relationSettings>
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierParent>0</relationChanceModifierParent>
+				<relationChanceModifierSibling>0</relationChanceModifierSibling>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			</relationSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>Naked</li>
+					<li>AteLavishMeal</li>
+					<li>AteFineMeal</li>
+					<!--li>AteAwfulMeal</li-->
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteCorpse</li>
+					<li>AteRottenFood</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatDirectCannibal</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>ObservedLayingCorpse</li>
+					<li>ObservedLayingRottingCorpse</li>
+				</cannotReceiveThoughts>
+				<ateThoughtSpecific>
+    </ateThoughtSpecific>
+				<replacerList>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatDirect</original>
+						<replacer>FogAteHiverMeatDirect</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatDirectCannibal</original>
+						<replacer>FogAteHiverMeatDirectCannibal</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatAsIngredient</original>
+						<replacer>FogAteHiverMeatAsIngredient</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatAsIngredientCannibal</original>
+						<replacer>FogAteHiverMeatAsIngredientCannibal</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaDirect</original>
+						<replacer>FogAteHiverLarvaDirect</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaDirectCannibal</original>
+						<replacer>FogAteHiverLarvaDirectCannibal</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaAsIngredient</original>
+						<replacer>FogAteHiverLarvaAsIngredient</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaAsIngredientCannibal</original>
+						<replacer>FogAteHiverLarvaAsIngredientCannibal</replacer>
+					</li>
+				</replacerList>
+			</thoughtSettings>
+			<raceRestriction>
+				<blackApparelList>
+					<li>Apparel_SimpleHelmet</li>
+					<li>Apparel_Tuque</li>
+					<li>Apparel_WarMask</li>
+					<li>Apparel_TribalHeaddress</li>
+					<li>Apparel_AdvancedHelmet</li>
+					<li>Apparel_PowerArmorHelmet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetRecon</li>
+					<li>Apparel_PsychicFoilHelmet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetReconPrestige</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorMarineHelmetPrestige</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorHelmetCataphract</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_ArmorCataphractPrestige</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Gunlink</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusHelmet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_EltexSkullcap</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_HatHood</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Crown</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_CrownStellic</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Headwrap</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Broadwrap</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Slicecap</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Tailcap</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_TortureCrown</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Footwear_Boots</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Footwear_Shoes</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Footwear_PlateBoots</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Footwear_MarineBoots</defName>
+					</li>
+					<li MayRequire="miathea.flakarmorexpansion">
+						<defName>Apparel_FlakBoots</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_Hardhat</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_GasMask</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_BaseballCap</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_Sunglasses</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_Glasses</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_TrapperHat</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_SummerHat</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Headgear_Hood</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedInsectoids">
+						<defName>VFE_Apparel_RiotHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedVikings">
+						<defName>VFEV_Apparel_GuardianHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedVikings">
+						<defName>VFEV_Apparel_LeatherHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedVikings">
+						<defName>VFEV_Apparel_RavagerHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedVikings">
+						<defName>VFEV_Apparel_CryptoLightHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedVikings">
+						<defName>VFEV_Apparel_CryptoHeavyHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedSettlers">
+						<defName>VFES_Headgear_FlatCap</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedMedieval">
+						<defName>VFEM_Apparel_PlateHelmetLight</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaFactionsExpandedMedieval">
+						<defName>VFEM_Apparel_PlateHelmetHeavy</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Headgear_TrooperHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Headgear_HeavyMarineHelmet</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Headgear_Balaclava</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Headgear_NightVisionGoggles</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Headgear_BallisticGoggles</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Headgear_GhillieHood</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Headgear_HAZMATMask</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Apparel_PlateHelmet</defName>
+					</li>
+					<li MayRequire="Gunmar.TribalWarriorSet">
+						<defName>Gunmar_Apparel_PeltCap</defName>
+					</li>
+					<li MayRequire="Gunmar.TribalWarriorSet">
+						<defName>Gunmar_Apparel_SunshadePeltCap</defName>
+					</li>
+					<li MayRequire="Gunmar.TribalWarriorSet">
+						<defName>Gunmar_Apparel_WovenCap</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_IronHat</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_NinjaMask</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_KusariZukin</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_ArmouredHood</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_BasketHat</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_PaladinsHeavyHachigane</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_PaladinsHeavyHelm</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_EmpireSamuraiHelmet</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_HeavyHachigane</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_HeavyPaladinsHelm</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_SamuraiHelmet</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_UnstrainedTinCan</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_CrabRaiderHelmet</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_TinCan</defName>
+					</li>
+					<li MayRequire="Kenshi.Armory.Geminingen">
+						<defName>Kenshi_HackStopperHat</defName>
+					</li>
+				</blackApparelList>
+			</raceRestriction>
+		</alienRace>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<nameGenerator>NamerPersonRimFogHeavy</nameGenerator>
+			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>      <trainability>None</trainability>
+			<makesFootprints>false</makesFootprints>
+			<lifeExpectancy>45</lifeExpectancy>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<leatherDef>Leather_Plain</leatherDef>
+			<!--<nameCategory>HumanStandard</nameCategory>-->
+			<body>HiverBody</body>
+			<predator>true</predator>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>1.4</baseHungerRate>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<hasGenders>false</hasGenders>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>HiverBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HiverAdult</def>
+					<minAge>2</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.1,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,2)</li>
+					<li>(1,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>Fogman_HediffGiverSet</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>InstallArchotechLeg</li>
+			<li>InstallBionicLeg</li>
+			<li>InstallSimpleProstheticLeg</li>
+			<li>InstallBionicEar</li>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+		</recipes>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li>HumanMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</AlienRace.ThingDef_AlienRace>
+	<!--FogPrince-->
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>FogPrince</defName>
+		<label>fog prince</label>
+		<description>The highest ranking of the Fogmen. It's mind ravaged by the loss of its queen, it now oversees the remnants of the hive controlling the drones and soldiers accordingly, occasionally multiple Fog Princes have been known to work together as the swarm's size increases. They are more intelligent and free-minded than drones, as such they are seen as a much higher threat.</description>
+		<statBases>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<ComfyTemperatureMin>8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<LeatherAmount>20</LeatherAmount>
+			<MarketValue>1000</MarketValue>
+			<MoveSpeed>5.0</MoveSpeed>
+			<Flammability>2.0</Flammability>
+			<CarryingCapacity>75</CarryingCapacity>
+			<MentalBreakThreshold>0.5</MentalBreakThreshold>
+			<ResearchSpeed>0.5</ResearchSpeed>
+			<MiningSpeed>0.5</MiningSpeed>
+			<SocialImpact>.2</SocialImpact>
+			<PlantWorkSpeed>0.8</PlantWorkSpeed>
+			<PlantHarvestYield>1.0</PlantHarvestYield>
+			<ConstructionSpeed>0.2</ConstructionSpeed>
+
+			<EatingSpeed>2</EatingSpeed>
+			<MeleeDPS>.4</MeleeDPS>
+			<IncomingDamageFactor>3</IncomingDamageFactor>
+			<FoodPoisonChance>.01</FoodPoisonChance>
+			<MeleeDodgeChance>0</MeleeDodgeChance>
+		</statBases>
+		
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>5.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>6</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>5.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>6</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<alienRace>
+			<generalSettings>
+				<humanRecipeImport>true</humanRecipeImport>
+				<alienPartGenerator>
+					<alienbodytypes>
+						<li>Thin</li>
+					</alienbodytypes>
+					<aliencrowntypes>
+						<li>Average_Normal</li>
+					</aliencrowntypes>
+					<useGenderedHeads>false</useGenderedHeads>
+					<useGenderedBodies>false</useGenderedBodies>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(255, 255, 255, 255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+				<immuneToAge>false</immuneToAge>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName>Asexual</defName>
+						<chance>99</chance>
+					</li>
+					<li>
+						<defName>Psychopath</defName>
+						<chance>99</chance>
+					</li>
+					<li>
+						<defName>Cannibal</defName>
+						<chance>99</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				<maxDamageForSocialfight>6</maxDamageForSocialfight>
+				<allowHumanBios>false</allowHumanBios>
+				<maleGenderProbability>1.0</maleGenderProbability>
+				<chemicalSettings>
+    </chemicalSettings>
+				<disallowedTraits>
+					<li>
+						<defName>BodyPurist</defName>
+					</li>
+				</disallowedTraits>
+				<notXenophobistTowards>
+					<li>FogHeavy</li>
+					<li>Fogman</li>
+				</notXenophobistTowards>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<body>Hivers/Fogmen/Body/</body>
+					<head>Hivers/Fogmen/FogPrince/</head>
+				</li>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<relationSettings>
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierExLover>1</relationChanceModifierExLover>
+				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierParent>0</relationChanceModifierParent>
+				<relationChanceModifierSibling>0</relationChanceModifierSibling>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			</relationSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>Naked</li>
+					<li>AteLavishMeal</li>
+					<li>AteFineMeal</li>
+					<!--li>AteAwfulMeal</li-->
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteCorpse</li>
+					<li>AteRottenFood</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatDirectCannibal</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>ObservedLayingCorpse</li>
+					<li>ObservedLayingRottingCorpse</li>
+				</cannotReceiveThoughts>
+				<ateThoughtSpecific>
+    </ateThoughtSpecific>
+				<replacerList>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatDirect</original>
+						<replacer>FogAteHiverMeatDirect</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatDirectCannibal</original>
+						<replacer>FogAteHiverMeatDirectCannibal</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatAsIngredient</original>
+						<replacer>FogAteHiverMeatAsIngredient</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverMeatAsIngredientCannibal</original>
+						<replacer>FogAteHiverMeatAsIngredientCannibal</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaDirect</original>
+						<replacer>FogAteHiverLarvaDirect</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaDirectCannibal</original>
+						<replacer>FogAteHiverLarvaDirectCannibal</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaAsIngredient</original>
+						<replacer>FogAteHiverLarvaAsIngredient</replacer>
+					</li>
+					<li MayRequire="vexedtrees980.rimuhiversi">
+						<original>AteHiverLarvaAsIngredientCannibal</original>
+						<replacer>FogAteHiverLarvaAsIngredientCannibal</replacer>
+					</li>
+				</replacerList>
+			</thoughtSettings>
+			<raceRestriction>
+				<blackApparelList>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Apparel_EltexSkullcap</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Footwear_Boots</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaApparelExpanded">
+						<defName>VAE_Footwear_Shoes</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Footwear_PlateBoots</defName>
+					</li>
+					<li MayRequire="VanillaExpanded.VanillaArmourExpanded">
+						<defName>VAE_Footwear_MarineBoots</defName>
+					</li>
+					<li MayRequire="miathea.flakarmorexpansion">
+						<defName>Apparel_FlakBoots</defName>
+					</li>
+				</blackApparelList>
+			</raceRestriction>
+		</alienRace>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<nameGenerator>NamerPersonRimFogPrince</nameGenerator>
+			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>      <trainability>None</trainability>
+			<makesFootprints>false</makesFootprints>
+			<lifeExpectancy>55</lifeExpectancy>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<leatherDef>Leather_Plain</leatherDef>
+			<!--<nameCategory>HumanStandard</nameCategory>-->
+			<body>HiverBody</body>
+			<predator>true</predator>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>1.2</baseHungerRate>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<hasGenders>false</hasGenders>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>HiverBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HiverAdult</def>
+					<minAge>2</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(0.1,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,2)</li>
+					<li>(1,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>Fogman_HediffGiverSet</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>InstallArchotechLeg</li>
+			<li>InstallBionicLeg</li>
+			<li>InstallSimpleProstheticLeg</li>
+			<li>InstallBionicEar</li>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+		</recipes>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li>HumanMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+	</AlienRace.ThingDef_AlienRace>
+	<LifeStageDef>
+		<defName>HiverAdult</defName>
+		<label>imago</label>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+		<milkable>false</milkable>
+		<shearable>false</shearable>
+	</LifeStageDef>
+	<LifeStageDef>
+		<defName>HiverBaby</defName>
+		<label>pupa</label>
+		<visible>false</visible>
+		<reproductive>false</reproductive>
+		<milkable>false</milkable>
+		<shearable>false</shearable>
+	</LifeStageDef>
+</Defs>

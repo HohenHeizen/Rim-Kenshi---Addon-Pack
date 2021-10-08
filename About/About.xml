@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>[HH] Rim-Kenshi: Addon Pack</name>
+    <author>HohenHeizen</author>
+    <supportedVersions>
+        <li>1.3</li>
+    </supportedVersions>
+    <packageId>HH.RimKenshi.Addons</packageId>
+    <modDependencies>
+        <li>
+            <packageId>erdelf.HumanoidAlienRaces</packageId>
+            <displayName>Humanoid Alien Races 2.0</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>VexedTrees980.RimUHiversI</packageId>
+            <displayName>Rim-Hivers!</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2506643795</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>erdelf.HumanoidAlienRaces</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+        <li>vanillaexpanded.vanillatraitsexpanded</li>
+        <li>VexedTrees980.RimUHiversI</li>
+        <li>vexedtrees980.rimshek</li>
+        <li>vexedtrees980.skeletons</li>
+    </loadAfter>
+    <description>
+        <![CDATA[  
+Pack adding various additions, features, and tweaks to Vex's Rim-Kenshi series.
+---
+<B>Changelog:</B>
+  1.1.0 - Hid Skeletal Faction until working as intended
+  1.0.0 - Redux in Version Number as Mod Direction Changed
+        - Fogmen are now squishy
+        - Fog Sickness (pretty sure my brain has this)
+        - Steam Initial Release
+---
+<B>Contains:</B>
+  Scenarios:
+    • The Hive-less Queen - Start with 1 Queen
+    • Vagabond Hive       - Start with 1 Queen more chosen at random
+  Player Factions:
+    • Hive Queen     
+    • Southern Hive 
+    • Southern Hive Queen 
+    • Fogmen - Optional Cannibal Race (wip)
+  Races:
+    • Fogmen
+    • Fog Heavy
+    • Fog Prince
+  Changes Hivers:
+    • Grammatical and Theming tweaks
+    • Hivers can now bite, needs tweaking
+    • Small fix in Hiver Royalty Patch.
+    • Hivers now wear vanilla gear during raids
+    • (Hive Armory) Same but Worker Drones now wear Chain Vests 
+    • (VEF) Hivers(Civil): Temperate, Desert, Arid, Tropical Rainforest & Swamp
+    • (VEF) Hivers(Savage): Desert & Extreme, Arid, Tropical Rainforest & Swamp
+    • (VEF) Fogmen(Cannibal): Arid, Desert, Tropical Swamp
+    • (VEF+Wastelands) Fogmen: Only Temperature Appropriate Wastelands
+  Changes Shek:
+    • Removed Supremacy error-code
+    • (VEF)Shek: Temperate, Arid, Desert
+  Changes Skeleton:
+    • Stranger in Black foundation 
+    • New Trait for Stranger in Black
+  Mod Support:
+    • <I>Babies and Children (w/Age Matters 2.0)</I>
+    - Hivers now hatch as "pupa" and take on Hiver traits
+    - Baby cry replaced with various clicking noises
+    • <I>Vanilla Expanded Framework</I>
+    - Custom biome spawning to mimic Kenshi race locations
+    - Race relations (I think I can do this with HAR actually)
+    - Regrowth Wastelands: Fogmen bases restricted to area
+    - Not Working: Stranger in Black Replacement
+Version <color=#FFD800>1.1.0</color>]]></description>
+
+</ModMetaData>

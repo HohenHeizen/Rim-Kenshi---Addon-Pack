@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerPersonRimFogmen</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[FogmanName]</li>
+
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>FogmanName</keyword>
+          <path>Hive_Names/Fogman_Name</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerPersonRimFogHeavy</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[FogHeavyName]</li>
+
+      </rulesStrings>
+      <rulesRaw>
+      
+        <li Class="Rule_File">
+          <keyword>FogHeavyName</keyword>
+          <path>Hive_Names/FogHeavy_Name</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+<RulePackDef>
+<defName>NamerPersonRimFogPrince</defName>
+<rulePack>
+  <rulesStrings>
+    <li>name->[FogPrinceName]</li>
+  </rulesStrings>
+  <rulesRaw>
+
+    <li Class="Rule_File">
+      <keyword>FogPrinceName</keyword>
+      <path>Hive_Names/FogPrince_Name</path>
+    </li>
+
+  </rulesRaw>
+</rulePack>
+</RulePackDef>
+
+
+</Defs>

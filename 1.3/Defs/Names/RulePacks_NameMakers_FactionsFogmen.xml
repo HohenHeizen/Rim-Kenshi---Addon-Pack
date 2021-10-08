@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>NamerFactionHiversFogmen</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [FactionFogmen] Deathyard</li>
+				<li>r_name->The swarm of the [FactionFogmen]</li>
+				<li>r_name->[FactionFogmen] Deathyard</li>
+				<li>r_name->The [FactionFogmen] Overrun</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>FactionFogmen</keyword>
+					<path>Faction_Names/FactionNameFog</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+</Defs>
+

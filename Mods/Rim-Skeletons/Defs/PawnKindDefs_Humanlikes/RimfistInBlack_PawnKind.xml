@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef>
+		<defName>RimfistInBlack</defName>
+		<label>mysterious skeleton</label>
+		<labelMale>mysterious skeleton</labelMale>
+		<labelFemale>mysterious skeleton</labelFemale>
+		<labelPlural>mysterious skeletons</labelPlural>
+		<race>Skeleton_</race>
+		<defaultFactionType>Ancients</defaultFactionType>
+		<combatPower>100</combatPower>
+		<minGenerationAge>1500</minGenerationAge>
+		<maxGenerationAge>2300</maxGenerationAge>
+		<isFighter>true</isFighter>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>BackstoriesRimfistInBlack</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<invNutrition>10.0</invNutrition>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>5</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<gearHealthRange>1~1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<weaponMoney>500~500</weaponMoney>
+		<weaponTags>
+			<li>Fists</li>
+		</weaponTags>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_Duster</li>
+			<li>Apparel_FlakVest</li>
+		</apparelRequired>
+		<apparelColor>(58,58,58)</apparelColor>
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>0~2</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

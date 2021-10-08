@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+		<match Class="PatchOperationAddModExtension">
+			<xpath>/Defs/FactionDef[defName="ShekNeutral"]</xpath>
+			<value>
+			<li Class="VFECore.FactionDefExtension">
+				<allowedBiomes>
+					<li>TemperateForest</li>
+					<li>Desert</li>
+					<li>AridShrubland</li>
+				</allowedBiomes>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
+	

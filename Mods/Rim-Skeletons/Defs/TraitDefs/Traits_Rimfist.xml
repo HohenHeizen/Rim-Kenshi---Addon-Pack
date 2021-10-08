@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <TraitDef>
+    <defName>RimfistsChosen</defName>
+    <degreeDatas>
+      <li>
+        <label>rimfist's chosen</label>
+        <description>After watching it's civilization fall {PAWN_nameDef} gave up it's former life and now wanders the rimworld's wastelands. Rumors of {PAWN_possessive} melee ability have spread even to your colony, but {PAWN_nameDef} insists they are exagerations.</description>
+        <statOffsets>
+          <MeleeHitChance>8</MeleeHitChance>
+        </statOffsets>
+        <skillGains>
+          <li>
+            <key>Melee</key>
+            <value>10</value>
+          </li>
+          <li>
+            <key>Shooting</key>
+            <value>-4</value>
+          </li>
+        </skillGains>
+        <disallowedInspirations>
+          <li>Frenzy_Shoot</li>
+        </disallowedInspirations>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>ShootingAccuracy</li>
+      <li>Wimp</li>
+    </conflictingTraits>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <conflictingPassions>
+      <li>Shooting</li>
+    </conflictingPassions>
+  </TraitDef>
+</Defs>

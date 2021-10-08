@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--  <FactionDef Name="AncientSkeletonBase" ParentName="AncientsBase" Abstract="True" >
+    <pawnSingular>ancient skeleton</pawnSingular>
+    <pawnsPlural>ancient skeletons</pawnsPlural>
+    <categoryTag>Ancient</categoryTag>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <fixedName>Ancients</fixedName>
+    <factionIconPath>World/WorldObjects/Expanding/Sites/DownedRefugee</factionIconPath>
+    <techLevel>Spacer</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>BackstoriesSkeleton</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <hidden>true</hidden>
+    <rescueesCanJoin>true</rescueesCanJoin>
+    <autoFlee>false</autoFlee>
+    <geneticVariance>1</geneticVariance>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Hyperweave</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </allowedMemes>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </requiredMemes>
+  </FactionDef>
+
+  <FactionDef ParentName="AncientSkeletonBase">
+    <defName>Ancients</defName>
+    <label>neutral skeletons</label>
+  </FactionDef>
+
+  <FactionDef ParentName="AncientSkeletonBase">
+    <defName>AncientsHostile</defName>
+    <label>hostile skeletons</label>
+    <permanentEnemy>true</permanentEnemy>
+  </FactionDef>
+-->
+
+</Defs>

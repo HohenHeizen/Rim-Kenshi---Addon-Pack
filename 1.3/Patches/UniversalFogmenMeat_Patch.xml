@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fogman"]/race</xpath>
+				<value>
+					<meatLabel>fogman meat</meatLabel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="FogHeavy"]/race</xpath>
+				<value>
+					<useMeatFrom>Fogman</useMeatFrom>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="FogPrince"]/race</xpath>
+				<value>
+					<useMeatFrom>Fogman</useMeatFrom>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>			

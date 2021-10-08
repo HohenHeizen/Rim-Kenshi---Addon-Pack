@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Southern Worker -->
+	<BabiesAndChildren.AlienChildDef>
+		<defName>Hiver_Worker_South</defName>
+		<disableBackstories>true</disableBackstories>
+	</BabiesAndChildren.AlienChildDef>
+	<!-- Southern Soldier -->
+	<BabiesAndChildren.AlienChildDef>
+		<defName>Hiver_Soldier_South</defName>
+		<disableBackstories>true</disableBackstories>
+	</BabiesAndChildren.AlienChildDef>
+	<!-- Southern Prince -->
+	<BabiesAndChildren.AlienChildDef>
+		<defName>Hiver_Prince_South</defName>
+		<disableBackstories>true</disableBackstories>
+	</BabiesAndChildren.AlienChildDef>
+	<!-- Southern Queen -->
+	<BabiesAndChildren.AlienChildDef>
+		<defName>Hiver_Queen_South</defName>
+		<disableBackstories>true</disableBackstories>
+	</BabiesAndChildren.AlienChildDef>
+
+</Defs>

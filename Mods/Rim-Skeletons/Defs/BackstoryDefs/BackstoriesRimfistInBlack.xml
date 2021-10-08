@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Adulthood.................................................................................-->
+<AlienRace.BackstoryDef>
+    <defName>RimfistBackground</defName>
+    <title>Wandering Unit</title>
+    <titleShort>Wanderer</titleShort>
+    <baseDescription>On a far-flung Rimworld many years ago [PAWN_nameDef] and many of its fellow robots staged a coup against their human overseers, the resulting rebellion lead to an all out war between the skeletons and humans. Eventually the planet was left in complete ruin due to the devastating planetary-weapons used during the conflict by both sides; thus neither side truly won.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>BackstoriesRimfistInBlack</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+	<skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>5</amount>
+		</li>		
+		<li>
+			<defName>Construction</defName>
+			<amount>4</amount>
+		</li>						
+	</skillGains>
+		<forcedTraits>
+	    <li>
+			<defName>RimfistsChosen</defName>
+			<chance>99</chance>
+		</li>	
+		<li>
+			<defName>Brawler</defName>
+			<chance>99</chance>
+		</li>
+	    <li>
+			<defName>Nimble</defName>
+			<chance>55</chance>
+		</li>
+	    <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+			<defName>VTE_Desensitized</defName>
+			<chance>12</chance>
+		</li>	
+	    <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">
+			<defName>VTE_Rebel</defName>
+			<chance>8</chance>
+		</li>		
+	</forcedTraits>	
+</AlienRace.BackstoryDef>
+</Defs>

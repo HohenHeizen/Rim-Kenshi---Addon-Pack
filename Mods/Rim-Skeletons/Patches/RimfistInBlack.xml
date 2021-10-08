@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- letting rimfist be a young skeleton-->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/AlienRace.BackstoryDef[defName="ChildhoodSkeleton1"]/spawnCategories</xpath>
+				<value>
+					<li>BackstoriesRimfistInBlack</li>
+				</value>
+			</li>
+			<!-- Adding rimfist backstory to ancients -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="Ancients"]</xpath>
+				<value>
+					<backstoryFilters>
+						<li>
+							<categories>
+								<li>BackstoriesRimfistInBlack</li>
+							</categories>
+						</li>
+					</backstoryFilters>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

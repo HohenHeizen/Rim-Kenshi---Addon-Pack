@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ScenarioDef>
+		<defName>TheHivelessQueen</defName>
+		<label>The Hive-less Queen</label>
+		<scenario>
+			<name>The Hive-less Queen</name>
+			<description>Your hive has burned to the ground. Everything you had built and created, including all of those that you gave birth to, has been reduced to ashes. Miraculously, you managed to escape... but now, you are alone. You are left with no choice but to find a new place to take root, and begin a new, flourishing hive.\n\nWarning: This scenario is extremely difficult in the early game, because Hiver Queens have an increased base hunger rate, and she will lack several skills to start. However, if you manage to survive, your Hive will grow quickly, because the Queen will lay eggs to produce new Hivers every few days.</description>
+			<summary>A solo Hive Queen start. Difficult.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>HivePlayerQueen</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>1</pawnCount>
+					<pawnChoiceCount>3</pawnChoiceCount>
+				</li>
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<!-- Starting research -->
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+					<hediff>Malnutrition</hediff>
+					<severityRange>0.2~0.2</severityRange>
+				</li>
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+				</li>
+				<!-- Start naked -->
+				<li Class="ScenPart_Naked">
+					<def>Naked</def>
+					<context>PlayerStarter</context>
+				</li>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Your old Hive is nothing but ash. You have no choice but to take choose a new home. This place may serve to be the beginning of a flourishing new Hive.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+	<ScenarioDef>
+		<defName>VagabondHive</defName>
+		<label>Vagabond Hive</label>
+		<scenario>
+			<name>Vagabond Hive</name>
+			<description>Disaster has struck your old Hive. Many of your number died to protect the Queen, but despite their best efforts, she was lost. Several of you managed to escape, alongside a newer, younger Queen, who none of you quite recognize... but unfortunately, you're low on options. You need leadership, and this Queen is all you have to help establish a new home.\n(You can chose your Hiver Queen for this scenario, but the drones placed under your command will be completely random - good luck.)</description>
+			<summary>A large group of hivers who have lost their home, but still have their Queen to rally around.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>HivePlayerQueen</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>1</pawnCount>
+					<pawnChoiceCount>6</pawnChoiceCount>
+				</li>
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+				<!-- Starting research -->
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<chance>1</chance>
+					<context>PlayerStarter</context>
+					<hediff>Malnutrition</hediff>
+					<severityRange>0.2~0.2</severityRange>
+				</li>
+				<!-- Player starting things -->
+				<li Class="AlienRace.ScenPart_StartingHumanlikes">
+					<def>StartingHumanlikes</def>
+					<kindDef>LostSoldier</kindDef>
+					<pawnCount>6</pawnCount>
+				</li>
+				<li Class="AlienRace.ScenPart_StartingHumanlikes">
+					<def>StartingHumanlikes</def>
+					<kindDef>LostWorker</kindDef>
+					<pawnCount>7</pawnCount>
+				</li>
+				<li Class="AlienRace.ScenPart_StartingHumanlikes">
+					<def>StartingHumanlikes</def>
+					<kindDef>LostPrince</kindDef>
+					<pawnCount>1</pawnCount>
+				</li>
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>600</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>1050</count>
+				</li>
+				<!-- Start naked -->
+				<li Class="ScenPart_Naked">
+					<def>Naked</def>
+					<context>PlayerStarter</context>
+				</li>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>A group of homeless hivers: they will attempt to build a new home for themselves, or die trying.</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>
