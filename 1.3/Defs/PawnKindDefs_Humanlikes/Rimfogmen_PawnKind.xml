@@ -25,11 +25,11 @@
 			<li>Neolithic</li>
 		</apparelTags>
 		<combatPower>40</combatPower>
-		<canBeSapper>true</canBeSapper>
+		<canBeSapper>false</canBeSapper>
 		<itemQuality>Poor</itemQuality>
 		<gearHealthRange>0.1~1.0</gearHealthRange>
 		<apparelMoney>0~100</apparelMoney>
-		<apparelColor>(143,211,211)</apparelColor>
+		<apparelColor>(233,233,200)</apparelColor>
 		<weaponMoney>0~0</weaponMoney>
 		<techHediffsMoney>100~200</techHediffsMoney>
 		<techHediffsTags>

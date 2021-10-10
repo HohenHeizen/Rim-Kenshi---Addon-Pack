@@ -1,169 +1,142 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationFindMod">
-		<success>Always</success>
 		<mods>
 			<li>Babies and Children [1.3]</li>
 		</mods>
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
+				<!-- Nested PatchOpFindMod. Otherwise Pupa float around and it's creepy. -->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Age Matters 2.0 [1.2+]</li>
+					</mods>
+
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+
+							<!-- Larva Bodies -->
+							<!--   Workers -->
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Worker" or "Hiver_Prince" or "Hiver_Worker_South" or "Hiver_Prince_South" or "Fogman or "FogPrince"]</xpath>
+								<value>
+									<babyGraphic>Hivers/Larva/Bodies/Pupa</babyGraphic>
+									<cryingSound>Larva_InsectCry</cryingSound>
+								</value>
+							</li>
+							<!--   Soldiers -->
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Soldier" or "Hiver_Soldier_South" or "FogHeavy"]</xpath>
+								<value>
+									<babyGraphic>Hivers/Larva/Bodies/Pupa_S</babyGraphic>
+									<cryingSound>Larva_InsectCry</cryingSound>
+								</value>
+							</li>
+							
+							<!--   Queen -->
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Queen" or "Hiver_Queen_South"]</xpath>
+								<value>
+									<babyGraphic>Hivers/Larva/Bodies/Pupa_Q</babyGraphic>
+									<cryingSound>Larva_InsectCry</cryingSound>
+								</value>
+							</li>
 				
-				<!-- Larva Bodies -->
-				<!--   Workers -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Worker"]</xpath>
-					<value>
-						<babyGraphic>Hivers/Larva/Bodies/Pupa</babyGraphic>
-						<cryingSound>Larva_InsectCry</cryingSound>
-					</value>
-				</li>
-				<!--   Soldiers -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Soldier"]</xpath>
-					<value>
-						<babyGraphic>Hivers/Larva/Bodies/Pupa_S</babyGraphic>
-						<cryingSound>Larva_InsectCry</cryingSound>
-					</value>
-				</li>
-				<!--   Princes -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Prince"]</xpath>
-					<value>
-						<babyGraphic>Hivers/Larva/Bodies/Pupa</babyGraphic>
-						<cryingSound>Larva_InsectCry</cryingSound>
-					</value>
-				</li>
-				<!--   Queen -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Queen"]</xpath>
-					<value>
-						<babyGraphic>Hivers/Larva/Bodies/Pupa_Q</babyGraphic>
-						<cryingSound>Larva_InsectCry</cryingSound>
-					</value>
-				</li>
-				<!--Southern dudes-->
-				<!--   Workers -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Worker_South"]</xpath>
-					<value>
-						<babyGraphic>Hivers/Larva/Bodies/Pupa</babyGraphic>
-						<cryingSound>Larva_InsectCry</cryingSound>
-					</value>
-				</li>
-				<!--   Soldiers -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Soldier_South"]</xpath>
-					<value>
-						<babyGraphic>Hivers/Larva/Bodies/Pupa_S</babyGraphic>
-						<cryingSound>Larva_InsectCry</cryingSound>
-					</value>
-				</li>
-				<!--   Princes -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Prince_South"]</xpath>
-					<value>
-						<babyGraphic>Hivers/Larva/Bodies/Pupa</babyGraphic>
-						<cryingSound>Larva_InsectCry</cryingSound>
-					</value>
-				</li>
-				<!--   Queen -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Queen_South"]</xpath>
-					<value>
-						<babyGraphic>Hivers/Larva/Bodies/Pupa_Q</babyGraphic>
-						<cryingSound>Larva_InsectCry</cryingSound>
-					</value>
-				</li>
-				<!--Larva shouldn't go to war-->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="Breach_Drone"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="Hiver_Soldier_Archer"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="Hiver_Soldier_Heavy"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="Hiver_Caravan_Guard"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="Hiver_Caravan_Prince"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="Hiver_Soldier_Heavy_South"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="Hiver_Archer_Heavy_South"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="Breach_Drone_South"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="LostWorker"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="LostPrince"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="LostSoldier"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="LostWorker_South"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="LostPrince_South"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="LostSoldier_South"]</xpath>
-					<value>
-						<minGenerationAge>2</minGenerationAge>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/PawnDef[defName="Hiver_Queen_South"]</xpath>
-					<value>
-						<minGenerationAge>30</minGenerationAge>
-					</value>
+							<!--Larva shouldn't go to war-->
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="Breach_Drone"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="Hiver_Soldier_Archer"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="Hiver_Soldier_Heavy"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="Hiver_Caravan_Guard"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="Hiver_Caravan_Prince"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="Hiver_Soldier_Heavy_South"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="Hiver_Archer_Heavy_South"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="Breach_Drone_South"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="LostWorker"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="LostPrince"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="LostSoldier"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="LostWorker_South"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="LostPrince_South"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="LostSoldier_South"]</xpath>
+								<value>
+									<minGenerationAge>2</minGenerationAge>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnDef[defName="Hiver_Queen_South"]</xpath>
+								<value>
+									<minGenerationAge>30</minGenerationAge>
+								</value>
+							</li>
+						</operations>
+					</match>
 				</li>
 			</operations>
 		</match>

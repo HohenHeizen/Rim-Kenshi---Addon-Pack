@@ -12,7 +12,7 @@
 		<canSiege>false</canSiege>
 		<canUseAvoidGrid>false</canUseAvoidGrid>
 		<techLevel>Neolithic</techLevel>
-		<autoFlee>false</autoFlee>
+		<canFlee>true</canFlee>
 		<allowedCultures>
 			<li>Corunan</li>
 		</allowedCultures>
@@ -90,7 +90,9 @@
 		<factionIconPath>World/WorldObjects/Expanding/Fogmen</factionIconPath>
 		<factionNameMaker>NamerFactionHiversFogmen</factionNameMaker>
 		<permanentEnemy>true</permanentEnemy>
-
+		<permanentEnemyToEveryoneExcept>
+			<li>HiverFogmen</li>
+		</permanentEnemyToEveryoneExcept>
 		<pawnGroupMakers>
 			<li>
 				<!-- Normal fights -->
@@ -148,7 +150,7 @@
 					<Fogman>14</Fogman>
 					<FogHeavy>2</FogHeavy>
 					<Heavy_FogHeavy>3</Heavy_FogHeavy>
-					
+
 				</options>
 			</li>
 			<li>
@@ -177,7 +179,7 @@
 		<configurationListOrderPriority>41</configurationListOrderPriority>
 		<settlementGenerationWeight>.5</settlementGenerationWeight>
 		<requiredCountAtGameStart>0</requiredCountAtGameStart>
-		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
 		<canMakeRandomly>false</canMakeRandomly>
 	</FactionDef>
 	<ThingSetMakerDef>
