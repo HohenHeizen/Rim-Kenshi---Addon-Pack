@@ -20,5 +20,19 @@
 		<defName>Hiver_Queen_South</defName>
 		<disableBackstories>true</disableBackstories>
 	</BabiesAndChildren.AlienChildDef>
-
+	
+	<BabiesAndChildren.AlienChildDef>
+		<defName>Fogman</defName>
+		<disableBackstories>true</disableBackstories>
+	</BabiesAndChildren.AlienChildDef>
+	<!-- Southern Soldier -->
+	<BabiesAndChildren.AlienChildDef>
+		<defName>FogHeavy</defName>
+		<disableBackstories>true</disableBackstories>
+	</BabiesAndChildren.AlienChildDef>
+	<!-- Southern Prince -->
+	<BabiesAndChildren.AlienChildDef>
+		<defName>FogPrince</defName>
+		<disableBackstories>true</disableBackstories>
+	</BabiesAndChildren.AlienChildDef>
 </Defs>
