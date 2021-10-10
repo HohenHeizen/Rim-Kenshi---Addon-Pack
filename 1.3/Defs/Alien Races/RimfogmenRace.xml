@@ -2,7 +2,7 @@
 <Defs>
 	<!--Fogman-->
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-		<defName>Fogman</defName>
+		<defName>Hiver_Worker_Fog</defName>
 		<label>fogman</label>
 		<description>Fragile and expendable, workers now crazed at the loss of the Queen; they know only servitude to the hive, their Princes. Though having loss ass sense of self they now travel in packs and attempt to swarm their prey.</description>
 		<statBases>
@@ -153,8 +153,8 @@
 					</li>
 				</disallowedTraits>
 				<notXenophobistTowards>
-					<li>FogHeavy</li>
-					<li>FogPrince</li>
+					<li>Hiver_Soldier_Fog</li>
+					<li>Hiver_Prince_Fog</li>
 				</notXenophobistTowards>
 			</generalSettings>
 			<graphicPaths>
@@ -429,9 +429,9 @@
 			</mergeCompatibilityTags>
 		</ingredient>
 	</AlienRace.ThingDef_AlienRace>
-	<!--FogHeavy-->
+	<!--Hiver_Soldier_Fog-->
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-		<defName>FogHeavy</defName>
+		<defName>Hiver_Soldier_Fog</defName>
 		<label>fog heavy</label>
 		<description>The grunts and muscle of any hive, Heavy drones are made to protect their hive and enforce the will of their Prince. Compared to other members of the hive they have excellent 360° vision, and have thick plates of chitin on parts of their body although they arne't as quick as the drones they are much more powerful.</description>
 		<statBases>
@@ -590,8 +590,8 @@
 					</li>
 				</disallowedTraits>
 				<notXenophobistTowards>
-					<li>FogPrince</li>
-					<li>Fogman</li>
+					<li>Hiver_Prince_Fog</li>
+					<li>Hiver_Worker_Fog</li>
 				</notXenophobistTowards>
 			</generalSettings>
 			<graphicPaths>
@@ -861,7 +861,7 @@
 		</alienRace>
 		<race>
 			<thinkTreeMain>Animal</thinkTreeMain>
-			<nameGenerator>NamerPersonRimFogHeavy</nameGenerator>
+			<nameGenerator>NamerPersonRimHiver_Soldier_Fog</nameGenerator>
 			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>      <trainability>None</trainability>
 			<makesFootprints>false</makesFootprints>
@@ -935,9 +935,9 @@
 			</mergeCompatibilityTags>
 		</ingredient>
 	</AlienRace.ThingDef_AlienRace>
-	<!--FogPrince-->
+	<!--Hiver_Prince_Fog-->
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-		<defName>FogPrince</defName>
+		<defName>Hiver_Prince_Fog</defName>
 		<label>fog prince</label>
 		<description>The highest ranking of the Fogmen. It's mind ravaged by the loss of its queen, it now oversees the remnants of the hive controlling the drones and soldiers accordingly, occasionally multiple Fog Princes have been known to work together as the swarm's size increases. They are more intelligent and free-minded than drones, as such they are seen as a much higher threat.</description>
 		<statBases>
@@ -1076,8 +1076,8 @@
 					</li>
 				</disallowedTraits>
 				<notXenophobistTowards>
-					<li>FogHeavy</li>
-					<li>Fogman</li>
+					<li>Hiver_Soldier_Fog</li>
+					<li>Hiver_Worker_Fog</li>
 				</notXenophobistTowards>
 			</generalSettings>
 			<graphicPaths>
@@ -1196,7 +1196,7 @@
 		</alienRace>
 		<race>
 			<thinkTreeMain>Animal</thinkTreeMain>
-			<nameGenerator>NamerPersonRimFogPrince</nameGenerator>
+			<nameGenerator>NamerPersonRimHiver_Prince_Fog</nameGenerator>
 			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>      <trainability>None</trainability>
 			<makesFootprints>false</makesFootprints>

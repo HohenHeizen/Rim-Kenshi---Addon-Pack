@@ -80,7 +80,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Fogman"]</xpath>
+					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Worker_Fog"]</xpath>
 					<value>
 						<babyGraphic>Hivers/Larva/Bodies/Pupa</babyGraphic>
 						<cryingSound>Larva_InsectCry</cryingSound>
@@ -88,7 +88,7 @@
 				</li>
 				<!--   Soldiers -->
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="FogHeavy"]</xpath>
+					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Soldier_Fog"]</xpath>
 					<value>
 						<babyGraphic>Hivers/Larva/Bodies/Pupa_S</babyGraphic>
 						<cryingSound>Larva_InsectCry</cryingSound>
@@ -96,7 +96,7 @@
 				</li>
 				<!--   Princes -->
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="FogPrince"]</xpath>
+					<xpath>/Defs/BabiesAndChildren.AlienChildDef[defName="Hiver_Prince_Fog"]</xpath>
 					<value>
 						<babyGraphic>Hivers/Larva/Bodies/Pupa</babyGraphic>
 						<cryingSound>Larva_InsectCry</cryingSound>

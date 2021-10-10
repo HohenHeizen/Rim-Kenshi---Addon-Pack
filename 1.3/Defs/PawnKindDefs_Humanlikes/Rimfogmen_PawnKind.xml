@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<PawnKindDef Name="FogHiverBase" Abstract="True">
-		<race>Fogman</race>
+		<race>Hiver_Worker_Fog</race>
 		<defaultFactionType>HiverFogmen</defaultFactionType>
 		<chemicalAddictionChance>0.0</chemicalAddictionChance>
 	</PawnKindDef>
 	<!-- Basic FogDrone -->
 	<PawnKindDef ParentName="FogHiverBase">
-		<defName>Fogman</defName>
+		<defName>Hiver_Worker_Fog</defName>
 		<label>fogman</label>
-		<race>Fogman</race>
+		<race>Hiver_Worker_Fog</race>
 		<defaultFactionType>HiverFogmen</defaultFactionType>
 		<backstoryFiltersOverride>
 			<li>
@@ -41,9 +41,9 @@
 	</PawnKindDef>
 	<!-- Basic Fog Heavy -->
 	<PawnKindDef ParentName="FogHiverBase">
-		<defName>FogHeavy</defName>
+		<defName>Hiver_Soldier_Fog</defName>
 		<label>heavy drone</label>
-		<race>FogHeavy</race>
+		<race>Hiver_Soldier_Fog</race>
 		<defaultFactionType>HiverFogmen</defaultFactionType>
 		<backstoryFiltersOverride>
 			<li>
@@ -80,12 +80,12 @@
 	<PawnKindDef ParentName="FogHiverBase">
 		<defName>Breach_FogDrone</defName>
 		<label>fog-drone</label>
-		<race>FogHeavy</race>
+		<race>Hiver_Soldier_Fog</race>
 		<defaultFactionType>HiverFogmen</defaultFactionType>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>HiveBackstoriesFogHeavy</li>
+					<li>HiveBackstoriesHiver_Soldier_Fog</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -119,14 +119,14 @@
 	</PawnKindDef>
 	<!-- Heavy Fog Heavy -->
 	<PawnKindDef ParentName="FogHiverBase">
-		<defName>Heavy_FogHeavy</defName>
+		<defName>Heavy_Hiver_Soldier_Fog</defName>
 		<label>heavy drone</label>
-		<race>FogHeavy</race>
+		<race>Hiver_Soldier_Fog</race>
 		<defaultFactionType>HiverFogmen</defaultFactionType>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>HiveBackstoriesFogHeavy</li>
+					<li>HiveBackstoriesHiver_Soldier_Fog</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -164,12 +164,12 @@
 		<initialWillRange>75~100</initialWillRange>
 		<initialResistanceRange>75~100</initialResistanceRange>
 	</PawnKindDef>
-	<!-- FogPrince -->
+	<!-- Hiver_Prince_Fog -->
 	<PawnKindDef ParentName="FogHiverBase">
-		<defName>FogPrince</defName>
+		<defName>Hiver_Prince_Fog</defName>
 		<label>prince commander</label>
 		<apparelColor>(143,211,211)</apparelColor>
-		<race>FogPrince</race>
+		<race>Hiver_Prince_Fog</race>
 		<defaultFactionType>HiverFogmen</defaultFactionType>
 		<backstoryFiltersOverride>
 			<li>
@@ -210,7 +210,7 @@
 		<defName>LarvalFogWorker</defName>
 		<label>worker-caste</label>
 		<combatPower>5</combatPower>
-		<race>Fogman</race>
+		<race>Hiver_Worker_Fog</race>
 		<baseRecruitDifficulty>0</baseRecruitDifficulty>
 		<backstoryFiltersOverride>
 			<li>
@@ -231,10 +231,10 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 	</PawnKindDef>
 	<PawnKindDef>
-		<defName>LarvalFogPrince</defName>
+		<defName>LarvalHiver_Prince_Fog</defName>
 		<label>prince-caste</label>
 		<combatPower>5</combatPower>
-		<race>FogPrince</race>
+		<race>Hiver_Prince_Fog</race>
 		<baseRecruitDifficulty>0</baseRecruitDifficulty>
 		<backstoryFiltersOverride>
 			<li>
@@ -255,10 +255,10 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 	</PawnKindDef>
 	<PawnKindDef>
-		<defName>LarvalFogHeavy</defName>
+		<defName>LarvalHiver_Soldier_Fog</defName>
 		<label>heavy-caste</label>
 		<combatPower>5</combatPower>
-		<race>FogHeavy</race>
+		<race>Hiver_Soldier_Fog</race>
 		<baseRecruitDifficulty>0</baseRecruitDifficulty>
 		<backstoryFiltersOverride>
 			<li>

@@ -35,7 +35,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/PawnKindDef[defName="Heavy_FogHeavy"]/apparelRequired</xpath>
+                    <xpath>/Defs/PawnKindDef[defName="Heavy_Hiver_Soldier_Fog"]/apparelRequired</xpath>
                     <value>
                         <apparelRequired>
                             <li MayRequire="Hive.Armory.Geminingen">Kenshi_HiverHeavyArmor</li>
@@ -44,7 +44,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/PawnKindDef[defName="FogPrince"]/apparelRequired</xpath>
+                    <xpath>/Defs/PawnKindDef[defName="Hiver_Prince_Fog"]/apparelRequired</xpath>
                     <value>
                         <apparelRequired>
                             <li>Apparel_WarVeil</li>

@@ -22,17 +22,17 @@
 	</BabiesAndChildren.AlienChildDef>
 	
 	<BabiesAndChildren.AlienChildDef>
-		<defName>Fogman</defName>
+		<defName>Hiver_Worker_Fog</defName>
 		<disableBackstories>true</disableBackstories>
 	</BabiesAndChildren.AlienChildDef>
 	<!-- Southern Soldier -->
 	<BabiesAndChildren.AlienChildDef>
-		<defName>FogHeavy</defName>
+		<defName>Hiver_Soldier_Fog</defName>
 		<disableBackstories>true</disableBackstories>
 	</BabiesAndChildren.AlienChildDef>
 	<!-- Southern Prince -->
 	<BabiesAndChildren.AlienChildDef>
-		<defName>FogPrince</defName>
+		<defName>Hiver_Prince_Fog</defName>
 		<disableBackstories>true</disableBackstories>
 	</BabiesAndChildren.AlienChildDef>
 </Defs>

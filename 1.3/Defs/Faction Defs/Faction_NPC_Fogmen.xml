@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<FactionDef ParentName="FactionBase" Name="FogmenFactionBase" Abstract="True">
-		<pawnSingular>fogman</pawnSingular>
+		<pawnSingular>Hiver_Worker_Fog</pawnSingular>
 		<pawnsPlural>fogmen</pawnsPlural>
 		<categoryTag>Tribal</categoryTag>
 		<listOrderPriority>41</listOrderPriority>
@@ -41,7 +41,7 @@
 				<categories>
 					<li>HiveBackstoryFogPrince</li>
 					<li>HiveBackstoryFogman</li>
-					<li>HiveBackstoriesFogHeavy</li>
+					<li>HiveBackstoriesHiver_Soldier_Fog</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -84,7 +84,7 @@
 			<li>(0.61, 0.45, 0.32)</li>
 		</colorSpectrum>
 		<fixedLeaderKinds MayRequire="Ludeon.RimWorld.Royalty">
-			<li>FogPrince</li>
+			<li>Hiver_Prince_Fog</li>
 		</fixedLeaderKinds>
 		<factionIconPath>World/WorldObjects/Expanding/Fogmen</factionIconPath>
 		<factionNameMaker>NamerFactionHiversFogmen</factionNameMaker>
@@ -99,8 +99,8 @@
 				<commonality>100</commonality>
 
 				<options>
-					<Fogman>11</Fogman>
-					<FogHeavy>2</FogHeavy>
+					<Hiver_Worker_Fog>11</Hiver_Worker_Fog>
+					<Hiver_Soldier_Fog>2</Hiver_Soldier_Fog>
 				</options>
 			</li>
 			<li>
@@ -108,7 +108,7 @@
 				<kindDef>Combat</kindDef>
 				<commonality>70</commonality>
 				<options>
-					<Fogman>1</Fogman>
+					<Hiver_Worker_Fog>1</Hiver_Worker_Fog>
 				</options>
 			</li>
 			<li>
@@ -116,9 +116,9 @@
 				<kindDef>Combat</kindDef>
 				<commonality>40</commonality>
 				<options>
-					<Fogman>11</Fogman>
-					<FogHeavy>2</FogHeavy>
-					<Heavy_FogHeavy>1</Heavy_FogHeavy>
+					<Hiver_Worker_Fog>11</Hiver_Worker_Fog>
+					<Hiver_Soldier_Fog>2</Hiver_Soldier_Fog>
+					<Heavy_Hiver_Soldier_Fog>1</Heavy_Hiver_Soldier_Fog>
 				</options>
 			</li>
 			<li>
@@ -126,8 +126,8 @@
 				<kindDef>Combat</kindDef>
 				<commonality>5</commonality>
 				<options>
-					<Heavy_FogHeavy>9</Heavy_FogHeavy>
-					<FogPrince>1</FogPrince>
+					<Heavy_Hiver_Soldier_Fog>9</Heavy_Hiver_Soldier_Fog>
+					<Hiver_Prince_Fog>1</Hiver_Prince_Fog>
 				</options>
 			</li>
 			<li>
@@ -135,9 +135,9 @@
 				<kindDef>Combat</kindDef>
 				<commonality>30</commonality>
 				<options>
-					<Fogman>15</Fogman>
-					<FogHeavy>5</FogHeavy>
-					<Heavy_FogHeavy>2</Heavy_FogHeavy>
+					<Hiver_Worker_Fog>15</Hiver_Worker_Fog>
+					<Hiver_Soldier_Fog>5</Hiver_Soldier_Fog>
+					<Heavy_Hiver_Soldier_Fog>2</Heavy_Hiver_Soldier_Fog>
 				</options>
 			</li>
 			<li>
@@ -146,9 +146,9 @@
 				<commonality>5</commonality>
 				<options>
 					<Breach_FogDrone>5</Breach_FogDrone>
-					<Fogman>14</Fogman>
-					<FogHeavy>2</FogHeavy>
-					<Heavy_FogHeavy>3</Heavy_FogHeavy>
+					<Hiver_Worker_Fog>14</Hiver_Worker_Fog>
+					<Hiver_Soldier_Fog>2</Hiver_Soldier_Fog>
+					<Heavy_Hiver_Soldier_Fog>3</Heavy_Hiver_Soldier_Fog>
 
 				</options>
 			</li>
@@ -158,19 +158,19 @@
 				<commonality>30</commonality>
 				<options>
 					<Breach_FogDrone>5</Breach_FogDrone>
-					<Fogman>11</Fogman>
-					<FogHeavy>2</FogHeavy>
-					<Heavy_FogHeavy>3</Heavy_FogHeavy>
-					<FogPrince>1</FogPrince>
+					<Hiver_Worker_Fog>11</Hiver_Worker_Fog>
+					<Hiver_Soldier_Fog>2</Hiver_Soldier_Fog>
+					<Heavy_Hiver_Soldier_Fog>3</Heavy_Hiver_Soldier_Fog>
+					<Hiver_Prince_Fog>1</Hiver_Prince_Fog>
 				</options>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<Fogman>20</Fogman>
-					<FogHeavy>5</FogHeavy>
-					<Heavy_FogHeavy>7</Heavy_FogHeavy>
-					<FogPrince>1</FogPrince>
+					<Hiver_Worker_Fog>20</Hiver_Worker_Fog>
+					<Hiver_Soldier_Fog>5</Hiver_Soldier_Fog>
+					<Heavy_Hiver_Soldier_Fog>7</Heavy_Hiver_Soldier_Fog>
+					<Hiver_Prince_Fog>1</Hiver_Prince_Fog>
 				</options>
 			</li>
 		</pawnGroupMakers>

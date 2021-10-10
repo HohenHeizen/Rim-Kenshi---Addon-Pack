@@ -3,21 +3,21 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Fogman"]/race</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Hiver_Worker_Fog"]/race</xpath>
 				<value>
 					<meatLabel>fogman meat</meatLabel>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="FogHeavy"]/race</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Hiver_Soldier_Fog"]/race</xpath>
 				<value>
-					<useMeatFrom>Fogman</useMeatFrom>
+					<useMeatFrom>Hiver_Worker_Fog</useMeatFrom>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="FogPrince"]/race</xpath>
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Hiver_Prince_Fog"]/race</xpath>
 				<value>
-					<useMeatFrom>Fogman</useMeatFrom>
+					<useMeatFrom>Hiver_Worker_Fog</useMeatFrom>
 				</value>
 			</li>
 		</operations>

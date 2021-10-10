@@ -18,7 +18,7 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>NamerPersonRimFogHeavy</defName>
+    <defName>NamerPersonRimHiver_Soldier_Fog</defName>
     <rulePack>
       <rulesStrings>
         <li>name->[FogHeavyName]</li>
@@ -35,7 +35,7 @@
   </RulePackDef>
 
 <RulePackDef>
-<defName>NamerPersonRimFogPrince</defName>
+<defName>NamerPersonRimHiver_Prince_Fog</defName>
 <rulePack>
   <rulesStrings>
     <li>name->[FogPrinceName]</li>
