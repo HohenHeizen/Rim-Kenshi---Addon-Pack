@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>FogAteHiverLarvaDirect</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <nullifyingTraits>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>ate hiver larva</label>
+        <description>WREEE!</description>
+        <!--<description>I don't know what was better, the taste, or how it looked at me as I ate it. That was essentially a baby. I want another.</description>-->
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>FogAteHiverLarvaDirectCannibal</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <requiredTraits>
+      <li>Cannibal</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>ate hiver larva</label>
+        <description>WWRREEEEEEEEE!</description>
+      <!--  <description>I ate the larva of a hiver. The taste was delicious, but the fear in its eyes as I ate it made me feel like I consumed a soul!</description>-->
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FogAteHiverLarvaAsIngredient</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <nullifyingTraits>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>cooked hiver larva</label>
+        <description>WREEEEE!</description>
+       <!-- <description>I ate a meal made from the larva of a hiver. That was essentially a baby. This is delicious, is there more?</description>-->
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>FogAteHiverLarvaAsIngredientCannibal</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <requiredTraits>
+      <li>Cannibal</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>cooked hiver larva</label>
+        <description>WWRREEEEEEEEE!</description>
+       <!-- <description>I ate a meal made from the larva of a hiver. The taste was satisfying. Sadly, I didn't even get to experience its fear.</description>-->
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

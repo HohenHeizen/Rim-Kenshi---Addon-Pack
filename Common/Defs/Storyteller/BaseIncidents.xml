@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <IncidentDef>
+        <defName>FogRaid</defName>
+        <label>fogmen raid</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+            <li>Map_PlayerHome</li>
+            <li>Map_TempIncident</li>
+            <li>Map_Misc</li>
+            <li>Map_RaidBeacon</li>
+        </targetTags>
+        <letterLabel>Fogmen</letterLabel>
+        <letterText>A group of fogmen have arrived nearby. They will mass in number to hunt down your colonists and kidnap them as soon as they can. They are not interested in dealing damage and destroying your base.</letterText>
+        <letterDef>ThreatBig</letterDef>
+        <workerClass>RimKenshiAddon.IncidentWorker_FogRaid</workerClass>
+        <baseChance>1.0</baseChance>
+        <category>ThreatBig</category>
+        <pointsScaleable>true</pointsScaleable>
+        <minThreatPoints>400</minThreatPoints>
+        <tale>ManhunterPack</tale>
+        <letterHyperlinkHediffDefs>
+            <li>FogSickness</li>
+        </letterHyperlinkHediffDefs>
+    </IncidentDef>
+    <!--Beep-->
+    <IncidentDef>
+        <defName>GiveQuest_Hiver_Worker_Beep</defName>
+        <label>strange hiver join</label>
+        <category>Misc</category> 
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_GiveQuest</workerClass>
+        <questScriptDef>BeepJoins</questScriptDef>
+        <pawnKind>Hiver_Worker_Beep</pawnKind>
+        <baseChance>0</baseChance>
+    </IncidentDef>
+    <!-- given by a special storyteller comp in patches -->
+</Defs>

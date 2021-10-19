@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Childhood.................................................................................-->
+
+  <AlienRace.BackstoryDef>
+    <defName>FogStandardWorker</defName>
+    <title>Fog Member</title>
+    <titleShort>Fogman</titleShort>
+    <baseDescription>{PAWN_nameDef} was born from the chest of its Queen, it grew quickly began serving its Fog as a worker drone.</baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <workDisables>
+      <li>Intellectual</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>
+
+
+
+  <!--Adulthood.................................................................................-->
+
+
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground1</defName>
+    <title>Fog Worker Drone</title>
+    <titleShort>Fog Worker</titleShort>
+    <baseDescription>{PAWN_nameDef} spent the majority of its adult life performing tasks for its Fog, such as mining, plant-work, fishing, etc.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground2</defName>
+    <title>Fog Angler</title>
+    <titleShort>Fog Angler</titleShort>
+    <baseDescription>{PAWN_nameDef} provided for its Fog by peacefully fishing at the waters edge, catching fish and crustaceans alike to be brought back to its Fog and made into a meal for the masses.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground3</defName>
+    <title>Fog Miner</title>
+    <titleShort>Fog Miner</titleShort>
+    <baseDescription>{PAWN_nameDef} toiled with its fellow worker drones as they tunneled into the mountain sides to obtain precious minerals and metals for the Fog. It was dangerous work, many Fogmans were lost to cave-ins, giant insectoids, or they simply got lost in the darkness and never found their way out.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground4</defName>
+    <title>Fog Constructor</title>
+    <titleShort>Constructor</titleShort>
+    <baseDescription>{PAWN_nameDef} worked with a team of worker drones to build and erect new nests and buildings for the Fog. It used a wooden framework and then using a mixture of mud and Fogman vomit to plaster the walls, creating strange triangular looking huts - it also was able to make simple wooden structures similar to those built by humans.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground5</defName>
+    <title>Fog Farmer</title>
+    <titleShort>Farmer</titleShort>
+    <baseDescription>In the Fog's fields {PAWN_nameDef} harvested and planted crops to feed and sustain the Fog members. It cultivated anything from simple grains, to vegetables and fruit, and even hemps and cotton for fabrics.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground6</defName>
+    <title>Fog Rancher</title>
+    <titleShort>Rancher</titleShort>
+    <baseDescription>{PAWN_nameDef} was tasked with tending to the cattle and livestock of its Fog, herding them from one grazing field to another, and calling upon the Heavy castes when a predator threated the herd.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground7</defName>
+    <title>Fog Food Preparer</title>
+    <titleShort>Food Preparer</titleShort>
+    <baseDescription>{PAWN_nameDef} processed the raw vegetables and meats of its Fog into mounds of pemmican and other food stuffs for its Fog to consume. The food was terrible by human standards, but delectable to its fellow Fogmans.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground8</defName>
+    <title>Fog Hauler</title>
+    <titleShort>Hauler</titleShort>
+    <baseDescription>{PAWN_nameDef} was designated as a hauling drone. Moving materials from the fields and mines, to the stockpiles, and then onto the prince craftsmen' workstations.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <forcedTraits>
+      <li>
+        <defName>SpeedOffset</defName>
+        <degree>2</degree>
+        <chance>20</chance>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground9</defName>
+    <title>Fogman Drone Medic</title>
+    <titleShort>Fog Medic</titleShort>
+    <baseDescription>{PAWN_nameDef} was the medical assistant for its Fog, aiding in the prince doctors as they worked to heal and install prosthetics; when and if a drone was beyond saving {PAWN_nameDef} would carry them to the furnaces to make room for the next patient.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground10</defName>
+    <title>Fogman Larva Tender</title>
+    <titleShort>Larva Tender</titleShort>
+    <baseDescription>{PAWN_nameDef} would aid the queen with her larva, acting much like the equivalent of a human mid-wife. It would ensure the larva was healthy and whole before moving them to the pupal nest for hatching.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground11</defName>
+    <title>Fog Woodcutter</title>
+    <titleShort>Woodcutter</titleShort>
+    <baseDescription>{PAWN_nameDef} acted as the colony's lumber-jack, delving into the forest, cutting down trees, and leaving pheromone marking as it returned so the many drones could help haul the logs back to the nest.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground12</defName>
+    <title>Fog Ground-breaker</title>
+    <titleShort>Ground-breaker</titleShort>
+    <baseDescription>{PAWN_nameDef} aided the builder drones by leveling and flattening various surfaces for new buildings. It also would dig intricate ditches from a local water source to the fields to aid crop irrigation.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground13</defName>
+    <title>Fog Bee-keeper</title>
+    <titleShort>Bee-breaker</titleShort>
+    <baseDescription>Though it may be ironic - Fogmans engage in insect husbandry just like humans. That was {PAWN_nameDef}'s job in the Fog, to care for and tend to the apiaries of the colony and harvest the honey for the food stores.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground14</defName>
+    <title>Fog Cooper</title>
+    <titleShort>Cooper</titleShort>
+    <baseDescription>{PAWN_nameDef} crafted barrels and kegs for its Fog. Either for fermentation of plant-matter and fruits for alcohol, or for a medium of transport for the various goods of the Fog.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground15</defName>
+    <title>Fog Tailor</title>
+    <titleShort>Tailor</titleShort>
+    <baseDescription>{PAWN_nameDef} created clothing and garments for its Fog - from woven wool, cloth, animal hide, or any other textile the Fog could obtain.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground16</defName>
+    <title>Fog Smith</title>
+    <titleShort>Smith</titleShort>
+    <baseDescription>{PAWN_nameDef} created shoddy armor and weapons for trade. The quality of the weapons were poor, but warring tribes would often purchase the cheap weapons in-able to relieve their blacksmiths.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground17</defName>
+    <title>Fog Baker</title>
+    <titleShort>Baker</titleShort>
+    <baseDescription>Being taught by the previous bakers before it, {PAWN_nameDef} baked bread and other food items for its Fog, it was not a good baker by any means, but it fed its Fog well.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground18</defName>
+    <title>Fog Stonemason</title>
+    <titleShort>Stonemason</titleShort>
+    <baseDescription>{PAWN_nameDef} would carve and cut stone chunks into blocks to supply the architects of its Fog - it wasn't very good at anything else.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground19</defName>
+    <title>Fodder-Drone</title>
+    <titleShort>Fodder</titleShort>
+    <baseDescription>{PAWN_nameDef} was meant as cannon-fodder in a gruesome assault on the enemy Fogs around its colony. It survived a handful of battles, but it does not seem to be bothered or traumatized.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground20</defName>
+    <title>Fog Brewer</title>
+    <titleShort>Brewer</titleShort>
+    <baseDescription>{PAWN_nameDef} fermented and cured various alcoholic drinks for both trade and Fog consumption.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>1</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground21</defName>
+    <title>Fog Huntsman</title>
+    <titleShort>Hunter</titleShort>
+    <baseDescription>In the woods, and on the plains is where {PAWN_nameDef} would hunt for small game and isolated prey. Its role as a hunter was vital to its colony's survival.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground22</defName>
+    <title>Drone Archer</title>
+    <titleShort>Archer</titleShort>
+    <baseDescription>Upon being hatched {PAWN_nameDef} was designated to be a warrior-drone; among the ranks of its Fog's Heavy drones. It was given a bow and taught how to use it, it was not inept with the weaponry, but it made due nonetheless.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground23</defName>
+    <title>Mortician-Drone</title>
+    <titleShort>Mortician</titleShort>
+    <baseDescription>{PAWN_nameDef} acted as the undertaker of its Fog, carrying death and sick Fogmans to be cremated inside the furnaces of its Fog - not wanting to risk diseases from ravaging its Fog. It also became slightly immune to some diseases whilst performing its work.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <forcedTraits>
+      <li>
+        <defName>Immunity</defName>
+        <degree>1</degree>
+        <chance>20</chance>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground24</defName>
+    <title>Fog Tanner</title>
+    <titleShort>Tanner</titleShort>
+    <baseDescription>Amongst the many Fog leather tanners is where {PAWN_nameDef} worked. It prepared animals skins and hides to be tanned and turned into leather - upon which it would be hauled to the leather workers of the Fog to either be turned into low grade armor for the drones or wares to be sold.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+    <defName>FogWorkerBackground25</defName>
+    <title>Fog Leather Worker</title>
+    <titleShort>Leather Worker</titleShort>
+    <baseDescription>{PAWN_nameDef} turned skins and hides into vests, vambraces, helmets, and armor for both cheap but effective protection the average drone desperately needs; or to be loaded onto one of the many rotating Fog trade caravans to be sold for profit.</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>HiveBackstoryFogman</li>
+    </spawnCategories>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+
+</Defs>

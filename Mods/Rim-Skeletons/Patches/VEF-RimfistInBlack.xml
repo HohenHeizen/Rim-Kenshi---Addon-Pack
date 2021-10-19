@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Expanded Framework</li>
+        </mods>
+        <match Class="VFECore.PatchOperationToggableSequence">
+            <enabled>True</enabled>
+            <label>Fogmen as default starting faction?:</label>
+            <mods>
+                <li>[HH] Rim-Kenshi: Addon Pack</li>
+            </mods>
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/FactionDef[defName="HivePlayer" or "HivePlayerSouth" or "HivePlayerQueen" or "HiverPlayerQueenSouth"]</xpath>
+                    <value>
+                        <li Class="VFECore.FactionDefExtension">
+                            <strangerInBlackReplacement>RimfistInBlack</strangerInBlackReplacement>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

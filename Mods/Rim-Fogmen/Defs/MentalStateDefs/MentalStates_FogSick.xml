@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <MentalBreakDef>
+    <defName>FogSickness</defName>
+    <mentalState>FogSick</mentalState>
+    <baseCommonality>1</baseCommonality>
+    <intensity>Extreme</intensity>
+  </MentalBreakDef>
+  
+    <MentalStateDef ParentName="BaseMentalState" Name="FogSick">
+        <defName>FogSick</defName>
+        <stateClass>RimKenshiAddon.MentalState_FogSick</stateClass>
+        <label>fog sickness</label>
+        <category>Aggro</category>
+        <nameColor>(0.9,0.2,0.5)</nameColor>    
+        <beginLetter>{0} has lost its mind to the fog!</beginLetter>
+        <baseInspectLine>Maddened: Fog Sickness</baseInspectLine>
+        <unspawnedCanDo>true</unspawnedCanDo>
+        <minTicksBeforeRecovery>99999999</minTicksBeforeRecovery>
+        <recoverFromSleep>false</recoverFromSleep>
+        <recoverFromDowned>false</recoverFromDowned>
+        <recoverFromCollapsingExhausted>false</recoverFromCollapsingExhausted>
+    </MentalStateDef>
+</Defs>

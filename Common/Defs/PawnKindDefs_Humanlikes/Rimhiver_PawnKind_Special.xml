@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Workers -->
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>Hiver_Worker_Beep</defName>
+    <label>hiver</label>
+    <race>Hiver_Worker</race>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>HiveBackstoryBeep</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <chemicalAddictionChance>0.01</chemicalAddictionChance>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>120~200</apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.05</techHediffsChance>
+    <techHediffsMoney>150~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+  </PawnKindDef>
+</Defs>

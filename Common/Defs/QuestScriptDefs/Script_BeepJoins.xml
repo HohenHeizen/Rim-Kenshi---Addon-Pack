@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <QuestScriptDef>
+    <defName>BeepJoins</defName>
+    <autoAccept>true</autoAccept>
+    <defaultChallengeRating>4</defaultChallengeRating>
+    <isRootSpecial>true</isRootSpecial>
+   <questNameRules>
+      <rulesStrings>
+        <li>questName->strange hiver joins</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription-></li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_QuestUnique">
+          <tag>BeepJoins</tag>
+        </li>
+        <li Class="QuestNode_Root_WandererJoin_WalkIn" />
+        </nodes>
+        </root>
+  </QuestScriptDef>
+</Defs>

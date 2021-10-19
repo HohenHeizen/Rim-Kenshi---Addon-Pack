@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<BeepQuestName>RimKenshi - Beep</BeepQuestName>
+	<BeepQuestDesc>A strange acting hiver approaches the colony, it appears to want to stay. Might be worth seeing what it wants.\n\n Or, maybe if you ignore it, it'll go away..</BeepQuestDesc>
+	<BeepQuestInfoTalkedTo>You had a really nice chat with {0}, keeping in touch may provide great opportunities.</BeepQuestInfoTalkedTo>
+	<BeepQuestInfoTalkedToReward>{0} left you a {1} after your chat.</BeepQuestInfoTalkedToReward>
+
+	<Beep_Dia1_DiaTitle>Beep Beep</Beep_Dia1_DiaTitle>
+	<Beep_Dia1_1>... ! \n [{0} sighs]</Beep_Dia1_1>
+	<Beep_Dia1_1_Option1>Uhh... Hi Beep...</Beep_Dia1_1_Option1>
+    <Beep_Dia1_1_Option2>What?</Beep_Dia1_1_Option2>
+    <Beep_Dia1_1_Option3>...nevermind</Beep_Dia1_1_Option3>
+    <Beep_Dia1_1_Option4>What are you dong here?</Beep_Dia1_1_Option4>
+
+    
+
+
+	<Beep_Dia1_2>[{0} gives you a tired but beautiful smile] That's kind of you.\n[{0} takes a deep breath and {1} eyes glance over the village and beyond]\nThis is a fantastic village, it fades in with the beautiful nature all around perfectly. \nHow are you guys doing here?</Beep_Dia1_2>
+	<Beep_Dia1_2_Option1>That's... nice of you to say, thanks. \nWe've put a lot of work into it so far, I hope we'll make it through the winter.</Beep_Dia1_2_Option1>
+	<Beep_Dia1_3>I'm sure you'll be fine. We started building a settlement not far from here. Hopefully Jack runs out of booze soon, so he can finally plan out the rest of the buildings. Our constructors are anxious to get to work.\n\nAnyway, you should come visit us when we're done and give us a chance to repay you guys for your hospitality. [You notice {0} starting to relax and smile]</Beep_Dia1_3>
+	<Beep_Dia1_3_Option1>Thanks, we'll be happy to come visit. What brings you guys here?</Beep_Dia1_3_Option1>
+	<Beep_Dia1_3_Option2>We might swing by. I've got to go, duty calls. \nGood luck on your travels.</Beep_Dia1_3_Option2>
+	<Beep_Dia1_4>[{0} looks down and bites on {1} lip] That's a long story...\n\nBut I guess we have time. We come from another planet, but endless war over powerful artifacts was the end of Valeron. My fiance died when we fled to our guild's ship. I have no idea how we made it out alive before the planets's core collapsed.\n\n[{0} looks up to the sky trying to shake the bad memories] Years later we came across your planet. We quickly noticed the ancient structures that can be found all over the planet and our thirst for knowledge drove us to settle here.\n[{0} shrugs] I'm not looking to repeat our mistakes, but in the end it's what we're good at. Settling here wasn't easy though, we were plagued by sickness, and raids from various factions.\n\n Any advice you can give us?</Beep_Dia1_4>
+	<Beep_Dia1_4_Option1>Wow, that's quite a story. Our ship crashed here as well not long ago.\nWe are just figuring things out same as you, i guess. \n[{1} points at {0}'s weapon] You seem well equipped for the challenge though.</Beep_Dia1_4_Option1>
+	<Beep_Dia1_5>[{0} starts playing with {1} hair nervously] You noticed hm? Ya, we managed to excavate a bunch of shrines already and found incredible artifacts, but the mechs inside worry me. We lost two of us when breaking open our second shrine.\n\nTheir deaths weren't in vain! We'd certainly be dead by now without all this gear we managed to scavenge.\n\n[Smiling again {0} looks you in the eyes] But things seem to work out fine, now that we have met you guys. I'm sure our factions will be able to help one another if you're interested.</Beep_Dia1_5>
+	<Beep_Dia1_5_Option1>Definitely! Together we might actually make it in this strange place.</Beep_Dia1_5_Option1>
+	<Beep_Dia1_5_Option2>Can't make any commitments, sorry.</Beep_Dia1_5_Option2>
+	<Beep_Dia1_6_1>[{0} takes your hand and smiles] Amazing, I can't wait to bring the good news home... We're no longer alone.\n\nI'm going to leave this {1} with you, we can spare it.\n\nI should talk to the others and see if everyone is ok. Thank you for that amazing chat, you gave me... hope. [{0} blushed as she let go of your hand and turned to {2} fellow guild mates]</Beep_Dia1_6_1>
+	<Beep_Dia1_6_1_Option1>[Coughing perplexed] Alright, see ya soon.</Beep_Dia1_6_1_Option1>
+	<Beep_Dia1_6_2>[{0} seems disappointed] Oh... okay. We still won't forget your help. Thank you.</Beep_Dia1_6_2>
+	<Beep_Dia1_6_2_Option1>Take care on your travels!</Beep_Dia1_6_2_Option1>
+
+</LanguageData>

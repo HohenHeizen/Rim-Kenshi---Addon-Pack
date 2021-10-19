@@ -1,47 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[HH] Rim-Kenshi: Addon Pack</name>
-    <author>HohenHeizen</author>
-    <supportedVersions>
-        <li>1.3</li>
-    </supportedVersions>
-    <packageId>HH.RimKenshi.Addons</packageId>
-    <modDependencies>
-        <li>
-            <packageId>erdelf.HumanoidAlienRaces</packageId>
-            <displayName>Humanoid Alien Races 2.0</displayName>
-            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
-        </li>
-        <li>
-            <packageId>VexedTrees980.RimUHiversI</packageId>
-            <displayName>Rim-Hivers!</displayName>
-            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2506643795</steamWorkshopUrl>
-        </li>
-    </modDependencies>
-    <loadAfter>
-        <li>erdelf.HumanoidAlienRaces</li>
-        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-        <li>vanillaexpanded.vanillatraitsexpanded</li>
-        <li>VexedTrees980.RimUHiversI</li>
-        <li>vexedtrees980.rimshek</li>
-        <li>vexedtrees980.skeletons</li>
-    </loadAfter>
-    <description>
-        <![CDATA[  
+  <name>[HH] Rim-Kenshi: Addon Pack</name>
+  <author>HohenHeizen</author>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <packageId>HH.RimKenshi.Addons</packageId>
+  <modDependencies>
+    <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races 2.0</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>VexedTrees980.RimUHiversI</packageId>
+      <displayName>Rim-Hivers!</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2506643795</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>erdelf.HumanoidAlienRaces</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>vanillaexpanded.vanillatraitsexpanded</li>
+    <li>VexedTrees980.RimUHiversI</li>
+    <li>vexedtrees980.rimshek</li>
+    <li>vexedtrees980.skeletons</li>
+  </loadAfter>
+  <description>
+    <![CDATA[  
 Pack adding various additions, features, and tweaks to Vex's Rim-Kenshi series.
 ---
 <B>Changelog:</B>
+  1.2.0 - File Restructure C# integration 
   1.1.3 - Various bug fixes cause I don't know how  to use my programs
         - Renamed Defs for easier future use. Apologies.
   1.1.2 - Fixed Floating Pupa
         - Changed Fogmen apparel colors and other faction tweaks
         - Improved Fogman Icon
   1.1.1 - Removed some race relations until I make it a patch
-  1.1.0 - Hid Skeletal Faction until working as intended
-  1.0.0 - Redux in Version Number as Mod Direction Changed
-        - Fogmen are now squishy
-        - Fog Sickness (pretty sure my brain has this)
-        - Steam Initial Release
 ---
 <B>Contains:</B>
   Scenarios:
@@ -81,6 +77,13 @@ Pack adding various additions, features, and tweaks to Vex's Rim-Kenshi series.
     - Race relations (I think I can do this with HAR actually)
     - Regrowth Wastelands: Fogmen bases restricted to area
     - Not Working: Stranger in Black Replacement
-Version <color=#FFD800>1.1.0</color>]]></description>
-
+Version <color=#FFD800>1.1.0</color>]]>
+  </description>
+ <!--> 
+  1.1.0 - Hid Skeletal Faction until working as intended
+  1.0.0 - Redux in Version Number as Mod Direction Changed
+        - Fogmen are now squishy
+        - Fog Sickness (pretty sure my brain has this)
+        - Steam Initial Release
+        </-->
 </ModMetaData>

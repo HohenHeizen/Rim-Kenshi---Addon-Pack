@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <HediffDef>
+        <defName>FogSickness</defName>
+        <label>fog sickness</label>
+        <description>A psychosis rumored to be caused by a parasite living in the brain, this mysterious illness causes a state of psychosis and cannabalistic bloodlust as the infected reverts back to more primal tendencies.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+        <initialSeverity>1</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_CauseMentalState">
+                <humanMentalState>FogSick</humanMentalState>
+                <mtbDaysToCauseMentalState>999999999</mtbDaysToCauseMentalState>
+            </li>
+        </comps>
+        <chanceToCauseNoPain>1.0</chanceToCauseNoPain>
+        <isBad>true</isBad>
+        <tendable>false</tendable>
+        <chronic>true</chronic>
+        <blocksSocialInteraction>true</blocksSocialInteraction>
+    </HediffDef>
+</Defs>

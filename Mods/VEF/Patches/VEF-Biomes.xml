@@ -1,81 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>/Defs/FactionDef[defName="HiverCivil"]</xpath>
-		<value>
-			<li Class="VFECore.FactionDefExtension">
-				<allowedBiomes>
-					<!-- List of allowed BiomeDefs -->
-					<li>TemperateForest</li>
-					<li>Desert</li>
-					<li>AridShrubland</li>
-					<li>TropicalRainforest</li>
-					<li>TropicalSwamp</li>
-				</allowedBiomes>
-				<startingGoodwillByFactionDefs>
-					<HiverSavage>-100~-40</HiverSavage>
-					<HiverFogmen>-100~-100</HiverFogmen>
-				</startingGoodwillByFactionDefs>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>/Defs/FactionDef[defName="HiverSavage"]</xpath>
-		<value>
-			<li Class="VFECore.FactionDefExtension">
-				<allowedBiomes>
-					<!-- List of allowed BiomeDefs -->
-					<li>Desert</li>
-					<li>AridShrubland</li>
-					<li>TropicalRainforest</li>
-					<li>TropicalSwamp</li>
-					<li>ExtremeDesert</li>
-				</allowedBiomes>
-				<startingGoodwillByFactionDefs>
-					<HiverCivil>-100~-100</HiverCivil>
-					<HiverFogmen>-100~-100</HiverFogmen>
-				</startingGoodwillByFactionDefs>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<xpath>/Defs/FactionDef[defName="HiverFogmen"]</xpath>
-		<value>
-			<li Class="VFECore.FactionDefExtension">
-				<allowedBiomes>
-					<!-- List of allowed BiomeDefs -->
-					<li>AridShrubland</li>
-					<li>Desert</li>
-					<li>TropicalSwamp</li>
-				</allowedBiomes>
-				<startingGoodwillByFactionDefs>
-					<HiverCivil>-100~-100</HiverCivil>					
-					<HiverFogmen>-100~-100</HiverFogmen>		
-				</startingGoodwillByFactionDefs>
-			</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>ReGrowth: Wastelands</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName="RG-W_Wasteland"]/settlementSelectionWeight</xpath>
-					<value>
-						<settlementSelectionWeight>.01</settlementSelectionWeight>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/FactionDef[defName="HiverFogmen"]/modExtensions/li/allowedBiomes</xpath>
-					<value>
-						<allowedBiomes>
-							<li>RG-W_Wasteland</li>
-						</allowedBiomes>
-					</value>
-				</li>
-			</operations>
-		</match>
-	</Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/FactionDef[defName="HiverCivil"]</xpath>
+        <value>
+            <li Class="VFECore.FactionDefExtension">
+                <allowedBiomes>
+                    <!-- List of allowed BiomeDefs -->
+                    <li>TemperateForest</li>
+                    <li>Desert</li>
+                    <li>AridShrubland</li>
+                    <li>TropicalRainforest</li>
+                    <li>TropicalSwamp</li>
+                </allowedBiomes>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/FactionDef[defName="HiverSavage"]</xpath>
+        <value>
+            <li Class="VFECore.FactionDefExtension">
+                <allowedBiomes>
+                    <!-- List of allowed BiomeDefs -->
+                    <li>Desert</li>
+                    <li>AridShrubland</li>
+                    <li>TropicalRainforest</li>
+                    <li>TropicalSwamp</li>
+                    <li>ExtremeDesert</li>
+                </allowedBiomes>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/FactionDef[defName="HiverFogmen"]</xpath>
+                <value>
+                    <li Class="VFECore.FactionDefExtension">
+                        <allowedBiomes>
+                            <!-- List of allowed BiomeDefs -->
+                            <li>AridShrubland</li>
+                            <li>Desert</li>
+                            <li>TropicalSwamp</li>
+                        </allowedBiomes>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>ReGrowth: Wastelands</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/BiomeDef[defName="RG-W_Wasteland"]/settlementSelectionWeight</xpath>
+                            <value>
+                                <settlementSelectionWeight>.01</settlementSelectionWeight>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/FactionDef[defName="HiverFogmen"]/modExtensions/li/allowedBiomes</xpath>
+                            <value>
+                                <allowedBiomes>
+                                    <li>RG-W_Wasteland</li>
+                                </allowedBiomes>
+                            </value>
+                        </li>
+                    </operations>
+                </match>
+            </li>
+        </operations>
+    </Operation>
 </Patch>
