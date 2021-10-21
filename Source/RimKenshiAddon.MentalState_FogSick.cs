@@ -30,7 +30,7 @@ namespace RimKenshiAddon
 		public override bool ForceHostileTo(Thing t)
 		{
 			Pawn pawn;
-			return ((pawn = (t as Pawn)) == null || !pawn.RaceProps.Roamer || pawn.health.Downed) && t.Faction != null && this.ForceHostileTo(t.Faction);
+			return ((pawn = (t as Pawn)) == null || pawn.health.Downed || !pawn.RaceProps.Roamer) && t.Faction != null && this.ForceHostileTo(t.Faction);
             //attack downed pawns
    
         }

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DutyDef>
+		<defName>RimKenshi_HHCaptureDowned</defName>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="JobGiver_AIFightEnemies">
+					<targetAcquireRadius>65</targetAcquireRadius>
+					<targetKeepRadius>72</targetKeepRadius>
+				  </li>
+				  <li Class="JobGiver_AIGotoNearestHostile" />
+				  <li Class="JobGiver_AIFightEnemies">
+					<targetAcquireRadius>20</targetAcquireRadius>
+					<targetKeepRadius>23</targetKeepRadius>
+				  </li>
+		
+				<li Class="JobGiver_Kidnap" />
+				<li Class="JobGiver_ExitMapBest">
+				  <defaultLocomotion>Jog</defaultLocomotion>
+				  <jobMaxDuration>200</jobMaxDuration>
+				  <forceCanDig>false</forceCanDig>
+				  </li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+
+</Defs>

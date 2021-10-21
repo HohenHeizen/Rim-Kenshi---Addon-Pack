@@ -6,7 +6,7 @@
         </mods>
         <match Class="VFECore.PatchOperationToggableSequence">
             <enabled>True</enabled>
-            <label>Fogmen as default starting faction?:</label>
+            <label>Rimfist-trained Stranger in Black?:</label>
             <mods>
                 <li>[HH] Rim-Kenshi: Addon Pack</li>
             </mods>

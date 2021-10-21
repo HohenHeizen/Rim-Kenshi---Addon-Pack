@@ -10,7 +10,7 @@
             <li>Map_Misc</li>
             <li>Map_RaidBeacon</li>
         </targetTags>
-        <letterLabel>Fogmen</letterLabel>
+        <letterLabel>Fogmen Horde</letterLabel>
         <letterText>A group of fogmen have arrived nearby. They will mass in number to hunt down your colonists and kidnap them as soon as they can. They are not interested in dealing damage and destroying your base.</letterText>
         <letterDef>ThreatBig</letterDef>
         <workerClass>RimKenshiAddon.IncidentWorker_FogRaid</workerClass>

@@ -46,11 +46,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RimKenshiAddon.MentalStateWorker_FogSick.cs" />
     <Compile Include="RimKenshiAddon.MentalState_FogSick.cs" />
     <Compile Include="RimKenshiAddon_DefOf.cs" />
-    <Compile Include="Raids\RimKenshiAddon.IncidentWorker_FogRaid.cs" />
-    <Compile Include="Raids\RimKenshiAddon.JobGiver_HHCaptureDowned.cs" />
+    <Compile Include="RimKenshiAddon.IncidentWorker_FogRaid.cs" />
+    <Compile Include="RimKenshiAddon.JobGiver_HHCaptureDowned.cs" />
     <Compile Include="RimKenshiAddon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

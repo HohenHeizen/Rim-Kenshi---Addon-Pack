@@ -2,12 +2,10 @@
 <loadFolders>
 	<v1.3>
 		<li>Common</li>
-		<li>Mods/Rim-Fogmen</li>
 		<li>Mods/Rim-Hivers!</li>
 		<li IfModActive="vexedtrees980.rimshek">Mods/Rim-Shek</li>
 		<li IfModActive="vexedtrees980.rimskeletons">Mods/Rim-Skeletons</li>
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">Mods/VEF</li>
 		<li IfModActive="babies.and.children.continued.13">Mods/BNC</li>
-		<li IfModActive="hive.armory.geminingen">Mods/Hive-Armory</li>
 	</v1.3>
 </loadFolders>

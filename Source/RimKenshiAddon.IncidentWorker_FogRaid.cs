@@ -132,7 +132,11 @@ namespace RimKenshiAddon
                 {
                     pawn.mindState.duty = new PawnDuty(DefDatabase<DutyDef>.GetNamed("RimKenshi_HHCaptureDowned"));
                }
-               
+                else
+                {
+                    pawn.mindState.duty = new PawnDuty(DutyDefOf.WanderClose);
+                }
+
             }
             LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
             LessonAutoActivator.TeachOpportunity(ConceptDefOf.ForbiddingDoors, OpportunityType.Critical);
@@ -146,10 +150,10 @@ namespace RimKenshiAddon
             return base.def.letterLabel;
         }
 
-       // protected override string GetLetterText(IncidentParms parms, List<Pawn> pawns)
-       // {
-      //      return "RimKenshi_DefOf.FogRaidDesc".Translate(parms.faction);
-      //  }
+        protected override string GetLetterText(IncidentParms parms, List<Pawn> pawns)
+        {
+            return "RimKenshi.FogRaidDesc".Translate(parms.faction);
+        }
 
         protected override LetterDef GetLetterDef()
         {

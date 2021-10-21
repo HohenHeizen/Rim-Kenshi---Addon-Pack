@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rim-Kenshi: Addon Pack</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+		<operations>
+
+					<!-- adds in the hivers color "or as much as i think it was" so that the hand mod picks it up, then we will block it out from access to the rest of the body with blackm.png
+					0.992, 0.788, 0.109
+					0.901, 0.670, 0.019
+					-->
+					<!-- Hiver_Prince -->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Hiver_Prince_Fog"]/alienRace/generalSettings/alienPartGenerator/colorChannels/li/first</xpath>
+						<value>
+									<first Class="ColorGenerator_Options">
+									<options>
+										<li>
+											<weight>10</weight>
+											<only>RGBA(58, 86, 130)</only>
+										</li>
+									</options>
+								</first>
+						</value>
+					</li>
+					
+					<!-- Hiver_Worker -->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Hiver_Worker_Fog"]/alienRace/generalSettings/alienPartGenerator/colorChannels/li/first</xpath>
+						<value>
+									<first Class="ColorGenerator_Options">
+									<options>
+										<li>
+											<weight>10</weight>
+											<only>RGBA(58, 86, 130)</only>
+										</li>
+									</options>
+								</first>
+						</value>
+					</li>
+				
+					<!-- Hiver_Soldier -->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Hiver_Soldier_Fog"]/alienRace/generalSettings/alienPartGenerator/colorChannels/li/first</xpath>
+						<value>
+									<first Class="ColorGenerator_Options">
+									<options>
+										<li>
+											<weight>10</weight>
+											<only>RGBA(58, 86, 130)</only>
+										</li>
+									</options>
+								</first>
+						</value>
+					</li>
+					
+				
+					
+		</operations>
+		</match>
+	</Operation>  
+</Patch>			
