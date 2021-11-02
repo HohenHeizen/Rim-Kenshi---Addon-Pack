@@ -7,5 +7,6 @@
 		<li IfModActive="vexedtrees980.rimskeletons">Mods/Rim-Skeletons</li>
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">Mods/VEF</li>
 		<li IfModActive="babies.and.children.continued.13">Mods/BNC</li>
+		<li IfModActive="hive.armory.geminingen">Mods/Hive-Armory</li>
 	</v1.3>
 </loadFolders>

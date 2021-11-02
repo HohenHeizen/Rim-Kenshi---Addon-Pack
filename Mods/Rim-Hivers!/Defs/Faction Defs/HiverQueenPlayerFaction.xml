@@ -5,7 +5,7 @@
 		<label>Hive Colony</label>
 		<description>A small hive, led by a queen</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>Hiver_Queen_Tribal</basicMemberKind>
+		<basicMemberKind>Hiver_Worker_Tribal</basicMemberKind>
 		<pawnSingular>Hiver</pawnSingular>
 		<pawnsPlural>Hivers</pawnsPlural>
 		<techLevel>Neolithic</techLevel>
@@ -51,7 +51,7 @@
 		<label>Hive Outpost</label>
 		<description>A small hive, led by a queen.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>Hiver_Queen_Tribal</basicMemberKind>
+		<basicMemberKind>Hiver_Hiver_Tribal_South</basicMemberKind>
 		<pawnSingular>Hiver</pawnSingular>
 		<pawnsPlural>Hivers</pawnsPlural>
 		<techLevel>Neolithic</techLevel>

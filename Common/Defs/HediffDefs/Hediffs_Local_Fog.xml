@@ -14,9 +14,12 @@
             </li>
         </comps>
         <chanceToCauseNoPain>1.0</chanceToCauseNoPain>
+        <causesNeed>Food</causesNeed>
         <isBad>true</isBad>
         <tendable>false</tendable>
         <chronic>true</chronic>
+        <makesAlert>false</makesAlert>
         <blocksSocialInteraction>true</blocksSocialInteraction>
+        <scenarioCanAdd>false</scenarioCanAdd>
     </HediffDef>
 </Defs>

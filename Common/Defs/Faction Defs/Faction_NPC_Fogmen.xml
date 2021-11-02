@@ -181,8 +181,8 @@
                     <thingDefs>
                         <li>Pemmican</li>
                         <li>ElephantTusk</li>
-                        <li>Skull</li>
-                        <li>HiverSkull</li>
+                        <li MayRequire="Ludeon.RimWorld.Ideology">Skull</li>
+                        <li>FogmenHead</li>
                     </thingDefs>
                 </filter>
             </fixedParams>

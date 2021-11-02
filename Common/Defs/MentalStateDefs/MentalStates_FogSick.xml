@@ -3,7 +3,7 @@
   <MentalBreakDef>
     <defName>FogSickness</defName>
     <mentalState>FogSick</mentalState>
-    <baseCommonality>1</baseCommonality>
+    <baseCommonality>0</baseCommonality>
     <intensity>Extreme</intensity>
   </MentalBreakDef>
   
@@ -16,9 +16,13 @@
         <beginLetter>{0} has lost its mind to the fog!</beginLetter>
         <baseInspectLine>Maddened: Fog Sickness</baseInspectLine>
         <unspawnedCanDo>true</unspawnedCanDo>
+        <recoveryMtbDays>99999999</recoveryMtbDays>
         <minTicksBeforeRecovery>99999999</minTicksBeforeRecovery>
         <recoverFromSleep>false</recoverFromSleep>
         <recoverFromDowned>false</recoverFromDowned>
         <recoverFromCollapsingExhausted>false</recoverFromCollapsingExhausted>
+        <stateEffecter>Berserk</stateEffecter>
+        <blockRandomInteraction>true</blockRandomInteraction>
+        <blockNormalThoughts>true</blockNormalThoughts>
     </MentalStateDef>
 </Defs>

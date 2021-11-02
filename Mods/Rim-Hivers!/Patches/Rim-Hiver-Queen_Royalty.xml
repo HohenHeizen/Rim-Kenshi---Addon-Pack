@@ -15,11 +15,11 @@
 						<li>HivePlayerQueenSouth</li>
 					</value>
 				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]//li[text()="Hiver_Civil_Queen_South"]</xpath>
-					<value><li>Hiver_Queen_South</li></value>
-				</li>
 			</operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]//li[text()="Hiver_Civil_Queen_South"]</xpath>
+				<value><li>Hiver_Queen_South</li></value>
+			</li>
 		</match>
 	</Operation>
 </Patch>

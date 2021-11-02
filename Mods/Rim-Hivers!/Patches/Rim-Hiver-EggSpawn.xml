@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="EggHiverFertilized"]/comps/li/hatcherPawns</xpath>
+        <value>
+            <hatcherPawns>
+                <li>LarvalWorker</li>
+                <li>LarvalWorker</li>
+                <li>LarvalWorker</li>
+                <li>LarvalWorker</li>
+                <li>LarvalWorker</li>
+                <li>LarvalWorker</li>
+                <li>LarvalSoldier</li>
+                <li>LarvalSoldier</li>
+                <li>LarvalSoldier</li>
+                <li>LarvalPrince</li>
+            </hatcherPawns>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="EggHiverFertilizedSouth"]/comps/li/hatcherPawns</xpath>
+        <value>
+            <hatcherPawns>
+                <li>LarvalWorker_South</li>
+                <li>LarvalWorker_South</li>
+                <li>LarvalWorker_South</li>
+                <li>LarvalWorker_South</li>
+                <li>LarvalWorker_South</li>
+                <li>LarvalWorker_South</li>
+                <li>LarvalSoldier_South</li>
+                <li>LarvalSoldier_South</li>
+                <li>LarvalSoldier_South</li>
+                <li>LarvalPrince_South</li>
+            </hatcherPawns>
+        </value>
+    </Operation>
+</Patch>

@@ -2,11 +2,11 @@
 <Defs>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>HiverSkull</defName>
-    <label>hiverskull</label>
-    <description>The chitinous shell of a hiver head.</description>
+    <defName>FogmenHead</defName>
+    <label>fogmen head</label>
+    <description>The chitinous shell of a fogmen's head. Some will pay a hefty some as bounty.</description>
     <graphicData>
-      <texPath>Things/Item/Skull</texPath>
+      <texPath>Hivers/Fogmen/Fogman</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>(0.75, 0.75)</drawSize>
     </graphicData>
@@ -14,15 +14,15 @@
     <stackLimit>25</stackLimit>
     <tradeNeverStack>true</tradeNeverStack>
     <useHitPoints>true</useHitPoints>
-    <rotatable>false</rotatable>
+    <rotatable>true</rotatable>
     <thingCategories>
       <li>Items</li>
     </thingCategories>
     <statBases>
       <Mass>1</Mass>
       <MaxHitPoints>60</MaxHitPoints>
-      <MarketValue>4</MarketValue>
-      <DeteriorationRate>1</DeteriorationRate>
+      <MarketValue>8</MarketValue>
+      <DeteriorationRate>4</DeteriorationRate>
     </statBases>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
